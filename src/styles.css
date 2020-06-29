@@ -8,22 +8,42 @@ html {
     border-left: none;
     border-right: none;
     position: relative;
-    padding: 20px;
     background: rgba(0, 0, 0, 0.5);
 }
 
 .header-container .header-content{
     z-index: 1;
-    text-align: left;
+    text-align: center;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 10%;
+    top: 30%;
     letter-spacing: 3px;
     color: #ffffff;
+    width: 100%;
     position: absolute;
 }
 .header-content h3{
     padding-bottom: 10px;
+}
+.header-footer{
+    position: absolute;
+    bottom: 100px;
+    padding: 10px 10px;
+}
+.header-footer a{
+    font-size: 18px;
+    padding: 0px 5px;
+    border: 1px solid #8dc63f;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #8dc63f;
+    color: #F1F1F1;
+}
+.header-footer a i{
+    color: #FFFFFF;
+}
+.header-footer a:hover{
+    box-shadow: 0px 0px 3px #fff;
 }
 .video-container{
     position: absolute;

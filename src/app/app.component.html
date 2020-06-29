@@ -67,7 +67,7 @@
 
 <div class="header-container">
   <div class="video-container">
-    <video preload="true" autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true">
+    <video preload="true" id="video" autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true">
       <source src="../assets/petrolink.mp4" type="video/mp4">
     </video>
   </div>
@@ -75,6 +75,10 @@
     <h2>We Love to <span id="typed"></span><span class="cursor"></span></h2>
     <h3>Petrolink Holding</h3>
     <a class="viewMoreButton">View More</a>
+  </div>
+  <div class="header-footer">
+    <a (click)="videoPlayClick()"><i class="fa fa-play"></i></a>
+    <a (click)="videoPauseClick()"><i class="fa fa-pause"></i></a>
   </div>
 </div>
 

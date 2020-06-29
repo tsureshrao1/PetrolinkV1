@@ -62,6 +62,16 @@ export class AppComponent implements OnInit{
     }
     //document.getElementById(divName+"_a").classList.add('active');
   }
+
+  videoPlayClick(){
+    $("#video").get(0).play();
+    $("#video").prop('muted', false);
+  }
+
+  videoPauseClick(){
+    $("#video").get(0).pause();
+  }
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
      /*if (window.pageYOffset > 50) {
