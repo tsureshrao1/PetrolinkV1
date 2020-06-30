@@ -98,7 +98,7 @@ video{
     padding-top: 100px;
 }
 .section-title {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .section-title h2 {
     text-transform: uppercase;
@@ -152,8 +152,9 @@ i {
     padding-bottom: 70px;
 }
 .pt-100 {
-    padding-top: 100px;
+    padding-top: 125px;
 }
+
 .gray-bg {
     background: #F1F1F1;
 }
@@ -213,10 +214,15 @@ p {
     text-align: justify;
 }
 .ptb-100 {
-    padding: 70px 0;
+    padding: 100px 0;    
+    
+}
+
+.hth-100{
+    height:100vh;
 }
 .single-icon {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .single-icon > p {
     margin-top: 15px;
@@ -267,7 +273,7 @@ textarea {
     font-size: 14px;
 }
 .contact-form .cont-submit {
-    margin-top: 27px;
+    margin-top: 15px;
 }
 .contact-form .cont-submit {
     border: 1px solid #8dc63f !important;
