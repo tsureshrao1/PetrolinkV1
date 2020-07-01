@@ -725,3 +725,38 @@ ul {
 	text-transform: uppercase;
     font-weight:500;	
 }
+
+.image-block {
+    padding: 1px;
+    
+}
+
+.image-block div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ top: 0;
+ left: 0;
+ text-align: center;
+ background: rgba(35,35,45,.8);
+ margin-bottom: 0px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+ transform: scale(1);
+}
+
+
+/* Hover on Parent Container */
+.image-block:hover{
+ cursor: pointer;
+}
+
+.image-block:hover div{
+ padding: 0px;
+ display: block;
+ visibility: visible;
+ opacity: 0.7; 
+}
