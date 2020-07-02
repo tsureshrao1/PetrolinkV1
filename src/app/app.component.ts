@@ -22,7 +22,7 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     $(document).ready(function(){
       $("#typed").typing({
-        strings: ['string 1', 'string 2', 'string 3'],
+        strings: ['Integrity', 'Reliability', 'Ownership', 'Teamwork', 'Credibility'],
         speed : 100,
         cursorSpeed : 1000,
         nextStringDelay: 750,

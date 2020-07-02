@@ -13,6 +13,7 @@ import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { HomeComponent } from './home/home.component';
 import { VideoBannerComponent } from './video-banner/video-banner.component';
 import { HeaderRouteNavComponent } from './header-route-nav/header-route-nav.component';
+import { ChairmanComponent } from './chairman/chairman.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HeaderRouteNavComponent } from './header-route-nav/header-route-nav.com
     HeaderNavComponent,
     HomeComponent,
     VideoBannerComponent,
-    HeaderRouteNavComponent
+    HeaderRouteNavComponent,
+    ChairmanComponent
   ],
   imports: [
     BrowserModule,

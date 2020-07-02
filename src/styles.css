@@ -760,3 +760,12 @@ ul {
  visibility: visible;
  opacity: 0.7; 
 }
+
+p.ap1s{
+    text-align: left;
+}
+
+ul.vcircle{
+    list-style-type: initial;
+    padding-left: 20px;
+}   
