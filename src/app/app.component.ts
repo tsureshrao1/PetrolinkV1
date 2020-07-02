@@ -49,29 +49,6 @@ export class AppComponent implements OnInit{
     $("header").scrollIntoView({behavior:"smooth"});
   }
 
-  scrollToDiv(divName){
-    document.getElementById(divName).scrollIntoView({behavior:"smooth"});
-    document.getElementById("header_a").classList.remove('active');
-    if(this.selected == null){
-      this.selected = divName+"_a";
-      document.getElementById(divName+"_a").classList.add('active');
-    }else{
-      document.getElementById(this.selected).classList.remove('active');
-      document.getElementById(divName+"_a").classList.add('active');
-      this.selected = divName+"_a";
-    }
-    //document.getElementById(divName+"_a").classList.add('active');
-  }
-
-  videoPlayClick(){
-    $("#video").get(0).play();
-    $("#video").prop('muted', false);
-  }
-
-  videoPauseClick(){
-    $("#video").get(0).pause();
-  }
-
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
      /*if (window.pageYOffset > 50) {
