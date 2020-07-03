@@ -769,3 +769,9 @@ ul.vcircle{
     list-style-type: initial;
     padding-left: 20px;
 }   
+
+
+.modalBodyContent {	
+	margin-top: 10px;
+	text-align: justify;
+}
