@@ -14,6 +14,9 @@ import { HomeComponent } from './home/home.component';
 import { VideoBannerComponent } from './video-banner/video-banner.component';
 import { HeaderRouteNavComponent } from './header-route-nav/header-route-nav.component';
 import { ChairmanComponent } from './chairman/chairman.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { HttpClientModule } from '@angular/common/http';
+import { CareersListComponent } from './careers-list/careers-list.component'; 
 
 @NgModule({
   declarations: [
@@ -29,11 +32,14 @@ import { ChairmanComponent } from './chairman/chairman.component';
     HomeComponent,
     VideoBannerComponent,
     HeaderRouteNavComponent,
-    ChairmanComponent
+    ChairmanComponent,
+    CareersListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPaginationModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
