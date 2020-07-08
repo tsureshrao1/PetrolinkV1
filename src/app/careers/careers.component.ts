@@ -12,6 +12,7 @@ declare var $: any;
 export class CareersComponent implements OnInit {
   careers:[];
   config: any;
+  successMessage: String;
   selectedDate;
   applyJobData: applyJob;
   public userFile:any = File;
@@ -91,6 +92,7 @@ export class CareersComponent implements OnInit {
           this.applyJobData.currentSalary = "";
           this.applyJobData.expSalary = "";
           this.applyJobData.presentLocation = "";
+          this.successMessage = "Job Application Submited Successfully";
         }
       });
     }
