@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiClientService } from './../api-client.service';
-import { from } from 'rxjs';
+declare var $: any;
 
 
 @Component({
@@ -10,15 +10,22 @@ import { from } from 'rxjs';
   styleUrls: ['./careers.component.css']
 })
 export class CareersComponent implements OnInit {
-  careers:Array<careers>;
+  careers:[];
   config: any;
+  selectedDate;
+  applyJobData: applyJob;
+  public userFile:any = File;
   constructor(private router: Router,private apiClientService: ApiClientService) {
-    
+    this.applyJobData = new applyJob();
   }
 
   ngOnInit(): void {
-    console.log("Hello");
-    this.apiClientService.getData().subscribe((data) => {
+    $(document).ready(function() {
+      /*$('#js-date').datepicker({
+        autoclose: true
+      });*/
+    });
+    this.apiClientService.getJopOpenings().subscribe((data) => {
       this.careers = data;
       console.log(this.careers.length);
       this.config = {
@@ -51,16 +58,75 @@ export class CareersComponent implements OnInit {
     this.config.currentPage = event;
   }
 
+
+  uploadFile(event){
+    const file = event.target.files[0];
+    this.userFile = file;
+    console.log(file);
+  }
+
+  applyJob(careerId){
+    console.log(careerId);
+    if(this.applyJobData != null && this.applyJobData.email != null){
+      this.applyJobData.careerId = careerId;
+      const profile = JSON.stringify(this.applyJobData);
+      const formData = new FormData();
+      formData.append('profile',profile);
+      formData.append('file',this.userFile);
+
+      this.apiClientService.applyJob(formData).subscribe((data) => {
+        if(data != null){
+          console.log("Success");
+          this.applyJobData.name = "";
+          this.applyJobData.dateOfbirth = "";
+          this.applyJobData.nationality = "";
+          this.applyJobData.email = "";
+          this.applyJobData.phoneNumber = "";
+          this.applyJobData.mobileNumber = "";
+          this.applyJobData.describeCurrentJob = "";
+          this.applyJobData.expAbroad = "";
+          this.applyJobData.expOthers = "";
+          this.applyJobData.qualifications = "";
+          this.applyJobData.joiningPeriod = "";
+          this.applyJobData.currentSalary = "";
+          this.applyJobData.expSalary = "";
+          this.applyJobData.presentLocation = "";
+        }
+      });
+    }
+  }
+
 }
 
 export class careers{
   id:any;
   role:string;
+  jobSummary:String;
   jobDescription:String;
 
-  constructor(id,role,jobDescription){
+  /*constructor(id,role,jobSummary){
     this.id = id;
     this.role = role;
-    this.jobDescription = jobDescription;
-  }
+    this.jobSummary = jobSummary;
+  }*/
+}
+
+
+export class applyJob{
+  id:any;
+  careerId:any;
+  name:String;
+  dateOfbirth:any;
+  nationality:String;
+  email:String;
+  phoneNumber:String;
+  mobileNumber:String;
+  describeCurrentJob:String;
+  expAbroad:String;
+  expOthers:String;
+  qualifications:String;
+  joiningPeriod:String;
+  currentSalary:String;
+  expSalary:String;
+  presentLocation:String;
 }

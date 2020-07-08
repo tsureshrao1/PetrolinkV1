@@ -1,7 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule} from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'; 
+import { HttpClientModule } from '@angular/common/http';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
+
+
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactusComponent } from './contactus/contactus.component';
@@ -14,9 +21,8 @@ import { HomeComponent } from './home/home.component';
 import { VideoBannerComponent } from './video-banner/video-banner.component';
 import { HeaderRouteNavComponent } from './header-route-nav/header-route-nav.component';
 import { ChairmanComponent } from './chairman/chairman.component';
-import { NgxPaginationModule } from 'ngx-pagination';
-import { HttpClientModule } from '@angular/common/http';
-import { CareersListComponent } from './careers-list/careers-list.component'; 
+import { HomepageYoutubeComponent } from './homepage-youtube/homepage-youtube.component';
+
 
 @NgModule({
   declarations: [
@@ -33,13 +39,16 @@ import { CareersListComponent } from './careers-list/careers-list.component';
     VideoBannerComponent,
     HeaderRouteNavComponent,
     ChairmanComponent,
-    CareersListComponent
+    HomepageYoutubeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxPaginationModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    BsDatepickerModule.forRoot(),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
