@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,34 +7,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   selected:string;
+    isShow: boolean;
+  topPosToStartShowing = 100;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  scrollToDiv(divName){
-    if(divName != 'header'){
-      document.getElementById(divName).scrollIntoView({behavior:"smooth"});
-      document.getElementById("header_a").classList.remove('active');
-      if(this.selected == null){
-        this.selected = divName+"_a";
-        document.getElementById(divName+"_a").classList.add('active');
-      }else{
-        document.getElementById(this.selected).classList.remove('active');
-        document.getElementById(divName+"_a").classList.add('active');
-        this.selected = divName+"_a";
-      }
-    }else{
-      document.getElementById("about_a").classList.remove('active');
-      document.getElementById("subsidiaries_a").classList.remove('active');
-      document.getElementById("projects_a").classList.remove('active');
-      document.getElementById("careers_a").classList.remove('active');
-      document.getElementById("contact_a").classList.remove('active');
-      document.getElementById("header_a").classList.add('active');
-      document.getElementById(divName).scrollIntoView({behavior:"smooth"});
-    }
+
+  @HostListener('window:scroll')
+  checkScroll() {
+  
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+    console.log('[scroll]', scrollPosition);
     
-    //document.getElementById(divName+"_a").classList.add('active');
+    if (scrollPosition >= this.topPosToStartShowing) {
+      this.isShow = true;
+    } else {
+      this.isShow = false;
+    }
+  }
+
+
+  gotoTop() {
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
   }
 
 }
