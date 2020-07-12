@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 declare var $: any;
 
 @Component({
@@ -7,7 +7,7 @@ declare var $: any;
   styleUrls: ['./homepage-youtube.component.css']
 })
 export class HomepageYoutubeComponent implements OnInit {
-
+  @ViewChild('myVideo') myVideo: ElementRef;
   constructor() { }
 
   ngOnInit(): void {
@@ -38,5 +38,10 @@ export class HomepageYoutubeComponent implements OnInit {
       // document ready
     });
   }
-
+pauseVideo() {
+    this.myVideo.nativeElement.pause();
+  }
+  playVideo(){
+    this.myVideo.nativeElement.play();
+  }
 }
