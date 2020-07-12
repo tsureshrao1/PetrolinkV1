@@ -30,4 +30,6 @@
 <!-- FOOTER -->
 <app-footer></app-footer>
 
-<a id="scrollUp" (click)="scrollToDiv('header')" style="position: fixed; z-index: 2147483647; display: block;"><i class="zmdi zmdi-chevron-up"></i></a>
+<a *ngIf="isShow" (click)="gotoTop()" class="scrollTop">
+<i class="zmdi zmdi-chevron-up"></i>
+</a>
