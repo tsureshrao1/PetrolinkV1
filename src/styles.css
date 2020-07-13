@@ -29,8 +29,9 @@ html {
 }
 .header-footer{
     position: absolute;
-    bottom: 100px;
+    bottom: 65px;
     padding: 10px 10px;
+    left: 45%;
 }
 .header-footer a{
     font-size: 18px;
