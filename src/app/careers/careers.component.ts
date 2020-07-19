@@ -64,7 +64,8 @@ export class CareersComponent implements OnInit {
   uploadFile(event){
     const file = event.target.files[0];
     this.userFile = file;
-    console.log(file);
+    // console.log(file);
+    $('.custom-file-label').html(file.name); 
   }
 ModelNot(){
   this.successMessage = false;
