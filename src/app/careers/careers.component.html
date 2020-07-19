@@ -118,6 +118,7 @@
                               <div class="row">
                               <div class="form-group col-xs-10 col-sm-12 col-md-12 col-lg-12">
                               <textarea class="form-control txtarea" maxlength="250" [(ngModel)]="applyJobData.describeCurrentJob || lenghtArea" name="describeCurrentJob" placeholder="Describe Current Job" required rows="3"></textarea>
+                              <div class="text-danger" *ngIf="lenghtArea?.length >= 250">Maximum Limit 250 Characters</div>
                               <!-- <input [(ngModel)]="applyJobData.describeCurrentJob" maxlength="250" name="describeCurrentJob" type="text"  class="form-control" placeholder="Describe Current Job" required autocomplete="nope"> -->
                               </div>
                               <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
