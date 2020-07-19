@@ -12,7 +12,8 @@ declare var $: any;
 export class CareersComponent implements OnInit {
   careers:[];
   config: any;
-  successMessage: String;
+  successMessage: boolean = false;
+  lenghtArea='';
   selectedDate;
   applyJobData: applyJob;
   public userFile:any = File;
@@ -65,7 +66,9 @@ export class CareersComponent implements OnInit {
     this.userFile = file;
     console.log(file);
   }
-
+ModelNot(){
+  this.successMessage = false;
+}
   applyJob(careerId){
     console.log(careerId);
     if(this.applyJobData != null && this.applyJobData.email != null){
@@ -92,7 +95,7 @@ export class CareersComponent implements OnInit {
           this.applyJobData.currentSalary = "";
           this.applyJobData.expSalary = "";
           this.applyJobData.presentLocation = "";
-          this.successMessage = "Job Application Submited Successfully";
+          this.successMessage = true;
         }
       });
     }
