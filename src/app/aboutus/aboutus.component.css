@@ -28,15 +28,35 @@
 }
 .about-area{background: #f5f5f5;}
 .bgVis{
-    background: #fff;
+background: #fff;
     padding: 12px;
-    min-height: 300px;
-    box-shadow: 0px 0px 4px #ccc;
-    border-radius: 6px;
+    min-height: 325px;
+    box-shadow: 0px 0px 20px #ccc;
+    border-radius: 0px;
     margin-top: 20px;
-    text-align:center;
+    text-align: left;
 }
 .bgVis h2{
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
+    margin-top: 30px;
+}
+.iconAbt i{position: absolute;
+    font-size: 4rem;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    left: 12px;
+    top: -22px;
+    z-index: 1;
+    color: #8dc63f;
+    border: 2px solid #8dc63f;}
+.bgVis .list-unstyled li {
+    font-size: 16px;
+    margin: 15px 0px;
+    font-weight: 600;
+}
+.bgVis .list-unstyled li i{
+    margin-right:10px;
+
 }
