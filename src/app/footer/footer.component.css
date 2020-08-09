@@ -1,0 +1,68 @@
+.gray-bg {
+    background: #333333;
+    color: #fff;
+    padding-bottom: 25px;
+}
+.menu-item {
+    margin-left: 0 !important;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 4px 0;
+}
+.menu-item:hover {
+   color: #8dc63f ;
+    border-bottom: 0 solid #8dc63f !important;
+}
+h3 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+h3:before {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 55px;
+    background-color: rgb(141, 198, 63);
+    position: relative;
+    top: 15px;
+    left: -3px;
+    margin-right: -60px
+} 
+
+.newsletter {
+    margin-top: 10px;
+}
+
+.newsletter  input[type='text'] {
+    border-radius: 50px;
+    background-color: #fff;
+    outline: none;
+    padding-left: 44px;
+    padding-right: 105px;
+}
+.newsletter button {
+    background-color: #8cc540;
+    border: none;
+    color: #fff;
+    height: 45px;
+    padding: 5px 25px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 15px;
+    outline: none;
+}
+
+.newsletter:before { 
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    background: url(../../assets/img/mail.svg) no-repeat;
+    position: absolute;
+    margin: 16px 0px 0px 20px;
+    background-size: 20px;
+}
