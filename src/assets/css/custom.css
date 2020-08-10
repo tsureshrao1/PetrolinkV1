@@ -436,7 +436,7 @@ ul {
 }
 .menu-item{
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;

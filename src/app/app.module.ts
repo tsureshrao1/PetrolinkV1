@@ -22,6 +22,7 @@ import { VideoBannerComponent } from './video-banner/video-banner.component';
 import { HeaderRouteNavComponent } from './header-route-nav/header-route-nav.component';
 import { ChairmanComponent } from './chairman/chairman.component';
 import { HomepageYoutubeComponent } from './homepage-youtube/homepage-youtube.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { HomepageYoutubeComponent } from './homepage-youtube/homepage-youtube.co
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
     FormsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

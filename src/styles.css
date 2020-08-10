@@ -1,6 +1,16 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    color: #353535;
+    font-family: "Roboto", sans-serif;
+   /* font-family: "Roboto Condensed", sans-serif;*/
+    padding: 0px !important;
+    margin: 0px !important;
+   /* font-weight: 300;*/
+    font-size: 14px;
+}
+
 .modal-header{
     background: #eaeaea;
 }
@@ -35,18 +45,25 @@ html {
 }
 .header-footer a{
     font-size: 18px;
-    padding: 0px 5px;
-    border: 1px solid #8dc63f;
+    padding: 10px 12px 10px 12px;
+    border: 1px solid #f2f2f2;
     margin: 5px;
     cursor: pointer;
-    background-color: #8dc63f;
     color: #F1F1F1;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
 }
 .header-footer a i{
     color: #FFFFFF;
+    position: relative;
+    top: 2px;
+    left: 1px;
 }
 .header-footer a:hover{
-    box-shadow: 0px 0px 3px #fff;
+    background-color: #353535;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 3px #353535;
 }
 .video-container{
     position: absolute;
@@ -108,7 +125,7 @@ video{
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 10px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 .single-about {
@@ -233,7 +250,7 @@ p {
     margin-top: 15px;
 }
 .single-icon i {
-font-size: 27px;
+    font-size: 27px;
     border: 1px solid #8dc63f;
     height: 50px;
     width: 50px;
@@ -242,6 +259,7 @@ font-size: 27px;
     line-height: 47px;
     color: #fff;
     background: #8dc63f;
+    float: left;
 }
 .contact-area > .container > .row > .col-md-6.contact-form {
     clear: unset;
@@ -268,7 +286,7 @@ input {
     background: #ffffff none repeat scroll 0 0;
     border: 1px solid #aba8a8;
     border-radius: 4px;
-    height: 150px;
+    height: 120px;
     padding-left: 20px;
 }
 textarea {
@@ -286,23 +304,24 @@ textarea {
     background: #ffffff none repeat scroll 0 0;
     border: 1px solid #aba8a8;
     border-radius: 4px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding-left: 20px;
 }
 
 .cont-submit {
     background: #8dc63f !important;
     border: 1px solid #8dc63f !important;
-    color: #8dc63f;
-    /* display: inline-block; */
-    font-size: 18px;
+    color: #8dc63f; 
+    font-size: 16px;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 8px 30px;
     text-transform: capitalize;
     transition: all 0.4s ease 0s;
     width: auto;
     padding: 10px 30px !important;
+    color: #fff !important;
+    border-radius: 25px !important;
 }
 .cont-submit:hover{
     background: transparent  !important;
@@ -329,7 +348,7 @@ input {
 
 .contact-sochil-icon.copyright-icon {
     margin: 0;
-    text-align: right;
+    text-align: left;
 }
 .contact-sochil-icon {
     margin-top: 35px;
@@ -471,7 +490,7 @@ ul {
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     display: block;
-    margin-left: 27px !important;
+    margin-left: 18px !important;
 }
 .sticky {
     background: #fff;
@@ -515,22 +534,23 @@ ul {
   .single-price {
     background-color: #ffffff;
     border-radius: 5px;
-    padding: 0 0 25px;
+    padding: 0 0 15px;
     text-align: center;
-    transition: all 0.3s ease 0s;
-    box-shadow: 0 2px 2px rgba(10, 16, 20, 0.24), 0 0 2px rgba(10, 16, 20, 0.12);
+    transition: all 0.10s ease 0s;
+    box-shadow: 0px 5px 13px rgb(10 16 20 / 0.10), 0 0 2px rgb(10 16 20 / 0.10);
+    border-left: 5px solid #81cc29;
 }
 
 .price-title > h3 {
     font-size: 18px;
-    background-color: #8dc63f;
     line-height: 19px;
-    padding: 18px 10px;
-    position: relative;
-    color: #F1F1F1;
+    padding: 15px 20px;
+    color: #000;
     transition: all 0.3s ease 0s;
-    text-align: center;
-    margin:0px;
+    text-align: left;
+    margin: 0px;
+    font-weight: normal;
+    padding-bottom: 10px;
 }
 .price-list .description{
     text-align: left;
@@ -848,3 +868,13 @@ ul.vcircle{
     color: #fff;
 }
 
+.hide-data {
+    display: none;
+}
+.block {
+    display: block;
+}
+.no-padding_ {
+    padding-left: 0;
+}
+.text_hide{ display: none;}

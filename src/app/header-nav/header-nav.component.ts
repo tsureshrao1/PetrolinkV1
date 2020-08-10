@@ -1,16 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, HostListener, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-header-nav',
   templateUrl: './header-nav.component.html',
-  styleUrls: ['./header-nav.component.css']
+  styleUrls: ['./header-nav.component.css'],
+  encapsulation : ViewEncapsulation.None
 })
 export class HeaderNavComponent implements OnInit {
   selected:string;
-  constructor() { }
+  constructor(@Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit(): void {
   }
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    if (document.body.scrollTop !> 50 ||     
+    document.documentElement.scrollTop !> 50) {
+      document.getElementById('subTitle').classList.add('sticky_nav');      
+    }
+    else {
+        document.getElementById('subTitle').classList.remove('sticky_nav');        
+    }
+  }
+
 
   scrollToDiv(divName){
     document.getElementById(divName).scrollIntoView({behavior:"smooth"});

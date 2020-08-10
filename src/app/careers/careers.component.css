@@ -28,53 +28,77 @@
 .ptb-100 {
     padding: 60px 0;
 }
+.textIndent1{     color: #555555;font-size: 14px;  line-height: 21px;}
+.secTitle { margin-bottom: 20px;}
 .secTitle h2{
     padding-bottom: 10px;
     padding-top: 10px;
-    font-size:44px;
-    font-weight:normal;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin: 0 !important;
+    color: #000;
 }
+.secTitle .info_txt{
+    font-size: 13px;
+    color: #7d7b7b;
+}
+.secTitle .info_txt_{
+    color:#565455;
+}
+
 .secTitle h2:before {
     content: "";
     display: inline-block;
-    height: 6px;
-    width: 80px;
+    height: 3px;
+    width: 55px;
     background-color: rgb(141, 198, 63);
-    margin-bottom: 16px;
-    margin-right: 20px;
-}
-.secTitle h2:after {
-    content: "";
-    display: inline-block;
-    height: 6px;
-    width: 80px;
-    background-color: rgb(141, 198, 63);
-    margin-bottom: 16px;
-    margin-left: 20px;
-}
+    position: relative;
+    top: 15px;
+    left: 40px;
+    margin-right: -60px
+} 
 .careers-area {
-    background: #f5f5f5;
+    background:url(../../assets/img/bg-8.jpg)no-repeat;
+    background-position: right center;
+    background-color: #f1f5f8;
 }
+
 .price-list .description {
-    padding: 10px 15px 0px 15px;
+    padding: 0px 15px 0px 22px;
     margin: 0px;
     font-size: 14px;
 }
 .price-list .details {
-    padding: 0px 15px;
+    padding: 0px 20px;
     font-size: 14px;
     margin: 0px;
 }
-.locApply .button{
-background: #8dc63f;
-    color: #fff;
-    padding: 8px 10px;
-    font-size: 14px;
-    border: 1px solid #8dc63f;
-    font-weight: 600;
-    margin-top: 2rem;
+
+p.details i {
+    background:url(../../assets/img/loc.svg)no-repeat;    
+    height: 18px;
+    width: 15px;
     display: inline-block;
-    text-decoration:none !important;
+    background-size: 13px;
+    position: relative;
+    margin-bottom: -3px;
+}
+
+.locApply {
+padding: 0 15px; 
+}
+
+.locApply .button{
+    color: #3f3f3f;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #c1c1c1;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none !important;
+    border-radius: 25px;
+    padding-top: 3px;
 }
 .btnLink{
     background: #8dc63f;
@@ -91,10 +115,11 @@ background: #8dc63f;
 .locApply .button:hover,.btnLink:hover{
     background: #fff;
     color: #8dc63f;
+    transition: all 0.10s ease 0s;
 }
 
 .single-price:hover{
-    box-shadow: 0 0px 10px rgba(10, 16, 20, 0.24), 0 0 2px rgba(10, 16, 20, 0.12);
+    box-shadow: 1px 3px 15px rgb(10 16 20 / 0.12), 0 0 11px rgba(10, 16, 20, 0.12);
 }
 .hgtFixed{
     height:70px; overflow: hidden;
@@ -195,3 +220,57 @@ fieldset .fa-calendar{
     right: 18px;
     z-index:100;
 }
+
+.open_ {
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+.banner_board {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #cecfd1;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 5px #0000003b;
+    margin-bottom: -80px;
+    position: relative;
+    z-index: 98;
+    margin-top: 25px;
+}
+
+.crr_ {
+    display: inline-block;
+    padding: 8px;
+    padding-right: 20px;
+}
+
+.crr_ a{
+    color:#0072bb !important;
+}
+
+.crr_._left {    
+    position: relative;
+    border-right: 1px solid #c5c5c5;
+    top: -15px;
+}
+
+.email + .crr_  {    
+    font-size: 21px;
+    color: #000;
+    padding-left: 20px;
+}
+.email {
+    display: inline-block;
+    width: 47px;
+    height: 35px;
+    background: url(../../assets/img/mail.svg);
+    margin-left: 15px;
+    position: relative;
+    top: -3px;
+}
+.crr_ .block { 
+    font-size: 16px;
+    color: #212529;
+}
+
