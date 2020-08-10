@@ -1,5 +1,5 @@
 .ptb-100 {
-    padding: 60px 0;
+    padding: 100px 0;
     background-image: url(../../assets/img/bg-7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,11 +73,14 @@
 }
 
 .slider_container img {
-    height: 400px;
+    width: 50%;
     float: left;
 }
 .slider_container img + div{
     width: 40%;
     float: left;
     margin: 8% 0 0 7%;
+    max-height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

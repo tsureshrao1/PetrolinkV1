@@ -40,8 +40,8 @@
     color: #000;
 }
 .secTitle .info_txt{
-    font-size: 13px;
-    color: #7d7b7b;
+    font-size: 11px;
+    color: #565455;
 }
 .secTitle .info_txt_{
     color:#565455;
@@ -90,10 +90,10 @@ padding: 0 15px;
 }
 
 .locApply .button{
-    color: #3f3f3f;
+    color: #282828;
     padding: 5px 10px;
     font-size: 14px;
-    border: 1px solid #c1c1c1;
+    border: 1px solid #282828;
     font-weight: 600;
     display: inline-block;
     text-decoration: none !important;
@@ -120,6 +120,15 @@ padding: 0 15px;
 
 .single-price:hover{
     box-shadow: 1px 3px 15px rgb(10 16 20 / 0.12), 0 0 11px rgba(10, 16, 20, 0.12);
+}
+.single-price .jbsumry { 
+    opacity: 0;
+    display: none;
+    
+ }
+.single-price:hover .jbsumry { 
+   opacity: 1;
+   display: block; 
 }
 .hgtFixed{
     height:70px; overflow: hidden;
@@ -251,7 +260,7 @@ fieldset .fa-calendar{
 
 .crr_._left {    
     position: relative;
-    border-right: 1px solid #c5c5c5;
+    border-right: 1px solid #212529;
     top: -15px;
 }
 

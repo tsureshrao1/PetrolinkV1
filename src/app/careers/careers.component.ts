@@ -31,7 +31,7 @@ export class CareersComponent implements OnInit {
       this.careers = data;
       console.log(this.careers.length);
       this.config = {
-        itemsPerPage: 3,
+        itemsPerPage: 6,
         currentPage: 1,
         totalItems: this.careers.length
       };
