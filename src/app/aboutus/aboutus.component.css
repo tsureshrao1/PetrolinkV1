@@ -12,8 +12,8 @@
     margin: 0 !important;
 }
 .secTitle .info_txt{
-    font-size: 11px;
-    color: #999999;
+    font-size: 13px !important;
+    color: #565455 !important;
 }
 .secTitle .info_txt_{
     color:#555555;

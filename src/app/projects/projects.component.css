@@ -79,7 +79,7 @@
 .slider_container img + div{
     width: 40%;
     float: left;
-    margin: 8% 0 0 7%;
+    margin: 11% 0 0 7%;
     max-height: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
