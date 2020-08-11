@@ -42,10 +42,10 @@
      z-index: 90;
 }
 .map_container {
-    position: absolute;
+    position: relative;
     right: 0;
     left: 0;
-    top: 275px;
+    top: 0;
     bottom: 0;
     z-index: 87;
 }

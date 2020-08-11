@@ -33,7 +33,7 @@
  
  
 .img_bnr {
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 30px;    
     position: relative;
     z-index: 889;    
@@ -118,7 +118,7 @@ content: " ";
 }
 .icons_list li{   
      display: inline-block;
-     margin: 5px 5.5%;
+     margin: 5px 22px;
 }
 .icons_list li:first-child{ margin-left: 0; }
 .icons_list li i {
@@ -155,17 +155,53 @@ content: " ";
 .vision_ {
     background: url(../../assets/img/vision.svg) no-repeat;
     display: inline-block;
-    width: 45px;
-    height: 45px;
-    background-position: 5px 5px;
+    width: 60px;
+    height: 60px;
+    background-position: 9px 12px;
     background-size: 40px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    float: left;
 }
+.vision_txt {
+    float: left;
+    width: 89%;
+    padding-left: 15px;
+ 
+}
+.vision_txt h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.vision_txt p {
+    color: #797979;
+    font-size: 14px;
+    line-height: 19px;
+}
+.mt-bg{ margin: 10px 0;
+    width: 100%;
+    display: inline-block;}
 
 .mission_ {
     background: url(../../assets/img/mission.svg) no-repeat;
     display: inline-block;
-    width: 45px;
-    height: 45px;
-    background-position: 0px 3px;
-    background-size: 47px;
+    width: 60px;
+    height: 60px;
+    background-position: 11px 9px;
+    background-size: 40px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    float: left;
 }
+.values_ {
+    background: url(../../assets/img/Values.svg) no-repeat;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-position: 11px 9px;
+    background-size: 40px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    float: left;
+}
+

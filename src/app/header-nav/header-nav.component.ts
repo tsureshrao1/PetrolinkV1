@@ -15,8 +15,8 @@ export class HeaderNavComponent implements OnInit {
   }
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    if (document.body.scrollTop !> 50 ||     
-    document.documentElement.scrollTop !> 50) {
+    if (document.body.scrollTop !> 100 ||     
+    document.documentElement.scrollTop !> 100) {
       document.getElementById('subTitle').classList.add('sticky_nav');      
     }
     else {

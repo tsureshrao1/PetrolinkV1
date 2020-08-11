@@ -264,11 +264,11 @@ p {
     clear: unset;
 }
 .contact-form form input {
-    background: #ffffff none repeat scroll 0 0;
+    background: #f2f2f2 none repeat scroll 0 0;
     border: 1px solid #aba8a8;
     border-radius: 4px;
-    margin-bottom: 30px;
-    padding-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 input {
@@ -282,11 +282,11 @@ input {
     width: 100%;
 }
 .contact-form form textarea {
-    background: #ffffff none repeat scroll 0 0;
+    background: #f2f2f2 none repeat scroll 0 0;
     border: 1px solid #aba8a8;
     border-radius: 4px;
-    height: 120px;
-    padding-left: 20px;
+    height: 70px;
+    padding-left: 10px;
 }
 textarea {
     resize: vertical;
@@ -300,25 +300,25 @@ textarea {
 
 
 .contact-form form input {
-    background: #ffffff none repeat scroll 0 0;
+    background: #f2f2f2 none repeat scroll 0 0;
     border: 1px solid #aba8a8;
     border-radius: 4px;
-    margin-bottom: 20px;
-    padding-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    height: 40px !important;
 }
 
 .cont-submit {
     background: #8dc63f !important;
     border: 1px solid #8dc63f !important;
-    color: #8dc63f; 
-    font-size: 16px;
+    color: #8dc63f;
+    font-size: 14px;
     font-weight: 600;
-    margin-top: 20px;
-    padding: 8px 30px;
+    margin-top: 5px;
     text-transform: capitalize;
     transition: all 0.4s ease 0s;
     width: auto;
-    padding: 10px 30px !important;
+    padding: 6px 20px 6px 20px !important;
     color: #fff !important;
     border-radius: 25px !important;
 }
@@ -870,9 +870,10 @@ ul.vcircle{
 .no-padding_ {
     padding-left: 0;
 }
-.text_hide{ display: none;}
+.text_hide{ display: none !important;}
 
 @media (max-width: 767px){
     .video { width: auto !important;    height: 640px;}
        
     }
+.sec_pt{ padding:80px 0 0 0;}

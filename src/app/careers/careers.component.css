@@ -267,7 +267,7 @@ fieldset .fa-calendar{
 }
 
 .email + .crr_  {    
-    font-size: 21px;
+    font-size: 18px;
     color: #000;
     padding-left: 20px;
 }
@@ -281,7 +281,7 @@ fieldset .fa-calendar{
     top: -3px;
 }
 .crr_ .block { 
-    font-size: 16px;
+    font-size: 14px;
     color: #212529;
 }
 
