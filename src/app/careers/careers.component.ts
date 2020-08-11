@@ -16,16 +16,15 @@ export class CareersComponent implements OnInit {
   lenghtArea='';
   selectedDate;
   applyJobData: applyJob;
+  applyJobDirectData: applyJob;
   public userFile:any = File;
   constructor(private router: Router,private apiClientService: ApiClientService) {
     this.applyJobData = new applyJob();
+    this.applyJobDirectData = new applyJob();
   }
 
   ngOnInit(): void {
     $(document).ready(function() {
-      /*$('#js-date').datepicker({
-        autoclose: true
-      });*/
     });
     this.apiClientService.getJopOpenings().subscribe((data) => {
       this.careers = data;
@@ -36,20 +35,6 @@ export class CareersComponent implements OnInit {
         totalItems: this.careers.length
       };
     });
-    /*this.careers = new Array<any>();
-    this.careers.push(new careers("1","Senior Electricion1","Minimum 7 years of Mechanical Maintanance experience in Drilling Industry."));
-    this.careers.push(new careers("2","Senior Electricion2","Minimum 7 years of Mechanical Maintanance experience in Drilling Industry."));
-    this.careers.push(new careers("3","Senior Electricion3","Minimum 7 years of Mechanical Maintanance experience in Drilling Industry."));
-    this.careers.push(new careers("4","Senior Electricion4","Minimum 7 years of Mechanical Maintanance experience in Drilling Industry."));
-    this.careers.push(new careers("5","Senior Electricion5","Minimum 7 years of Mechanical Maintanance experience in Drilling Industry."));
-    this.careers.push(new careers("6","Senior Electricion6","Minimum 7 years of Mechanical Maintanance experience in Drilling Industry."));
-    this.careers.push(new careers("7","Senior Electricion7","Minimum 7 years of Mechanical Maintanance experience in Drilling Industry."));
-    this.careers.push(new careers("8","Senior Electricion8","Minimum 7 years of Mechanical Maintanance experience in Drilling Industry."));
-    this.careers.push(new careers("9","Senior Electricion9","Minimum 7 years of Mechanical Maintanance experience in Drilling Industry."));
-    this.careers.push(new careers("10","Senior Electricion10","Minimum 7 years of Mechanical Maintanance experience in Drilling Industry."));
-    this.careers.push(new careers("11","Senior Electricion11","Minimum 7 years of Mechanical Maintanance experience in Drilling Industry."));
-    this.careers.push(new careers("12","Senior Electricion12","Minimum 7 years of Mechanical Maintanance experience in Drilling Industry."));*/
-    
   }
 
   clickMore(){
@@ -64,7 +49,6 @@ export class CareersComponent implements OnInit {
   uploadFile(event){
     const file = event.target.files[0];
     this.userFile = file;
-    // console.log(file);
     $('.custom-file-label').html(file.name); 
   }
 ModelNot(){
@@ -102,6 +86,36 @@ ModelNot(){
     }
   }
 
+  applyJobDirect(){
+    console.log();
+    if(this.applyJobDirectData != null && this.applyJobDirectData.email != null){
+      const profile = JSON.stringify(this.applyJobDirectData);
+      const formData = new FormData();
+      formData.append('profile',profile);
+      formData.append('file',this.userFile);
+      this.apiClientService.applyJobDirect(formData).subscribe((data) => {
+        if(data != null){
+          console.log("Success");
+          this.applyJobDirectData.name = "";
+          this.applyJobDirectData.dateOfbirth = "";
+          this.applyJobDirectData.nationality = "";
+          this.applyJobDirectData.email = "";
+          this.applyJobDirectData.phoneNumber = "";
+          this.applyJobDirectData.mobileNumber = "";
+          this.applyJobDirectData.describeCurrentJob = "";
+          this.applyJobDirectData.expAbroad = "";
+          this.applyJobDirectData.expOthers = "";
+          this.applyJobDirectData.qualifications = "";
+          this.applyJobDirectData.joiningPeriod = "";
+          this.applyJobDirectData.currentSalary = "";
+          this.applyJobDirectData.expSalary = "";
+          this.applyJobDirectData.presentLocation = "";
+          this.successMessage = true;
+        }
+      });
+    }
+  }
+
 }
 
 export class careers{
@@ -109,12 +123,6 @@ export class careers{
   role:string;
   jobSummary:String;
   jobDescription:String;
-
-  /*constructor(id,role,jobSummary){
-    this.id = id;
-    this.role = role;
-    this.jobSummary = jobSummary;
-  }*/
 }
 
 

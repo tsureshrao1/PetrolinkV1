@@ -74,6 +74,7 @@
     padding: 0px 20px;
     font-size: 14px;
     margin: 0px;
+    color: #6f6f6f;
 }
 
 p.details i {
@@ -83,7 +84,7 @@ p.details i {
     display: inline-block;
     background-size: 13px;
     position: relative;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
 }
 
 .locApply {
@@ -92,14 +93,14 @@ padding: 0 15px;
 
 .locApply .button{
     color: #282828;
-    padding: 5px 10px;
+    padding: 5px 15px;
     font-size: 14px;
-    border: 1px solid #282828;
-    font-weight: 600;
+    border: 1px solid #adadad;
+    font-weight: 400;
     display: inline-block;
     text-decoration: none !important;
     border-radius: 25px;
-    padding-top: 3px;
+    padding-top: 6px;
 }
 .btnLink{
     background: #8dc63f;

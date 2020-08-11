@@ -22,7 +22,7 @@
     transition: all 0.5s ease-in-out;   
 }
 .menu-item , .navbar-light.sticky_nav .menu-item{ 
-    color: #282828 !important;
+    color: #565656 !important;
 }
 .navbar-brand img{
     height: 80px;

@@ -271,7 +271,7 @@
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4"
                                                          [class.has-error]="email.invalid && email.touched"
                                                          [class.has-success]="email.valid">
-                                                         <input [(ngModel)]="applyJobData.email" required id="email"
+                                                         <input [(ngModel)]="applyJobDirectData.email" required id="email"
                                                             #email="ngModel" type="email" name="email"
                                                             class="form-control" placeholder="* Enter email">
                                                          <div class="text-danger mgtopm8px"
@@ -281,7 +281,7 @@
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4"
                                                          [class.has-error]="name.invalid && name.touched"
                                                          [class.has-success]="name.valid">
-                                                         <input [(ngModel)]="applyJobData.name" type="text" id="name"
+                                                         <input [(ngModel)]="applyJobDirectData.name" type="text" id="name"
                                                             #name="ngModel" name="name" class="form-control"
                                                             placeholder="* Enter Name" required autocomplete="nope">
                                                          <div class="text-danger mgtopm8px"
@@ -291,25 +291,25 @@
                                                       <div
                                                          class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4 input-group date"
                                                          data-provide="datepicker">
-                                                         <input [(ngModel)]="applyJobData.dateOfbirth"
+                                                         <input [(ngModel)]="applyJobDirectData.dateOfbirth"
                                                             name="dateOfbirth" type="text"
                                                             class="form-control datepicker_dob" id="data-date"
                                                             placeholder="Select DOB" bsDatepicker required
                                                             autocomplete="nope">
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobData.nationality"
+                                                         <input [(ngModel)]="applyJobDirectData.nationality"
                                                             name="nationality" type="text" class="form-control"
                                                             placeholder="Enter Nationality" required
                                                             autocomplete="nope">
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobData.phoneNumber"
+                                                         <input [(ngModel)]="applyJobDirectData.phoneNumber"
                                                             name="phoneNumber" type="text" class="form-control"
                                                             placeholder="Phone No" required autocomplete="nope">
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobData.mobileNumber"
+                                                         <input [(ngModel)]="applyJobDirectData.mobileNumber"
                                                             name="mobileNumber" type="text" class="form-control"
                                                             placeholder="Mobile No" required autocomplete="nope">
                                                       </div>
@@ -322,7 +322,7 @@
                                                    <div class="row">
                                                       <div class="form-group col-xs-10 col-sm-12 col-md-12 col-lg-12">
                                                          <textarea class="form-control txtarea" maxlength="250"
-                                                            [(ngModel)]="applyJobData.describeCurrentJob || lenghtArea"
+                                                            [(ngModel)]="applyJobDirectData.describeCurrentJob || lenghtArea"
                                                             name="describeCurrentJob" placeholder="Describe Current Job"
                                                             required rows="3"></textarea>
                                                          <div class="text-danger" *ngIf="lenghtArea?.length >= 250">
@@ -331,41 +331,41 @@
                                                          <!-- <input [(ngModel)]="applyJobData.describeCurrentJob" maxlength="250" name="describeCurrentJob" type="text"  class="form-control" placeholder="Describe Current Job" required autocomplete="nope"> -->
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobData.expAbroad" name="expAbroad"
+                                                         <input [(ngModel)]="applyJobDirectData.expAbroad" name="expAbroad"
                                                             type="text" class="form-control"
                                                             placeholder="Abroad (Experience in Years)" required
                                                             autocomplete="nope">
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobData.expOthers" name="expOthers"
+                                                         <input [(ngModel)]="applyJobDirectData.expOthers" name="expOthers"
                                                             type="text" class="form-control"
                                                             placeholder="Others  (Experience in Years)" required
                                                             autocomplete="nope">
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobData.qualifications"
+                                                         <input [(ngModel)]="applyJobDirectData.qualifications"
                                                             name="qualifications" type="text" class="form-control"
                                                             placeholder="Your Qualification" required
                                                             autocomplete="nope">
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobData.joiningPeriod"
+                                                         <input [(ngModel)]="applyJobDirectData.joiningPeriod"
                                                             name="joiningPeriod" type="text" class="form-control"
                                                             placeholder="When Can You Join?" required
                                                             autocomplete="nope">
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobData.currentSalary"
+                                                         <input [(ngModel)]="applyJobDirectData.currentSalary"
                                                             name="currentSalary" type="text" class="form-control"
                                                             placeholder="Current Salary" required autocomplete="nope">
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobData.expSalary" name="expSalary"
+                                                         <input [(ngModel)]="applyJobDirectData.expSalary" name="expSalary"
                                                             type="text" class="form-control"
                                                             placeholder="Expected Salary" required autocomplete="nope">
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobData.presentLocation"
+                                                         <input [(ngModel)]="applyJobDirectData.presentLocation"
                                                             name="presentLocation" type="text" class="form-control"
                                                             placeholder="Current Location" required autocomplete="nope">
                                                       </div>
@@ -381,9 +381,8 @@
                                                       </div>
                                                    </div>
                                                 </fieldset>
-                                                <div
-                                                   class="form-group col-xs-10 col-sm-12 col-md-12 col-lg-12 text-center">
-                                                   <button (click)="applyJob(career.id)" type="submit"
+                                                <div class="form-group col-xs-10 col-sm-12 col-md-12 col-lg-12 text-center">
+                                                   <button (click)="applyJobDirect()" type="submit"
                                                       class="btnLink btn-link col-md-12">Apply</button>
                                                 </div>
                                              </div>
@@ -448,8 +447,17 @@
          Direct Apply
          <span class="block">Could not find a suitable vacancy?</span>
       </span>
-      <div class="clearfix locApply float-right mt-4">  <a data-toggle="modal"  href="#Modal_direct" 
-         data-target="#Modal_direct" class="button">Apply Here</a> 
+
+      <div class="clearfix locApply float-right mt-4">
+      <a (click)="applyJobDirect()" data-toggle="modal"   data-target="#Modal_direct"
+         class="button">Apply Here</a>
+   </div>
+
+
+     
+
+
+      <div > 
       </div>
 
    </div>
