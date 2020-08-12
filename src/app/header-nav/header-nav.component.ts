@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, HostListener, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
+import { style } from '@angular/animations';
 
 @Component({
   selector: 'app-header-nav',
@@ -26,7 +27,7 @@ export class HeaderNavComponent implements OnInit {
 
 
   scrollToDiv(divName){
-    document.getElementById(divName).scrollIntoView({behavior:"smooth"});
+    document.getElementById(divName).scrollIntoView({behavior:"smooth"}); 
     document.getElementById("header_a").classList.remove('active');
     if(this.selected == null){
       this.selected = divName+"_a";

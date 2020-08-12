@@ -1,5 +1,4 @@
-.ptb-100 {
-    padding: 100px 0;
+.ptb-100 {   
     background-image: url(../../assets/img/bg-7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,17 +69,67 @@
     height: 100%;
     border-radius: 6px;
     border: 1px solid #fafeff;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 6px;
+    border: 1px solid #fafeff;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
-.slider_container img {
-    width: 50%;
-    float: left;
-}
-.slider_container img + div{
-    width: 40%;
-    float: left;
-    margin: 11% 0 0 7%;
-    max-height: 200px;
+ 
+.pro_slider{
+ 
+    margin: 5%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.carousel-item.active {
+    border: none;
+    border-radius: 5px 0 0px 5px;
+    overflow: hidden;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; 
+}
+
+ 
+.carousel-control-prev {
+    left: -45px;
+}
+.carousel-control-next {
+    right: -31px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    background-image: none;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+
+.carousel-control-next-icon:after
+{
+  content: '🡒';
+  font-size: 35px;
+  color: #9a9a9a;
+  top: 0px;
+  position: relative;
+}
+
+.carousel-control-prev-icon:after {
+  content: '🡐';
+  font-size: 35px;
+    color: #9a9a9a;
+    top: 0px;
+    position: relative;
+}
+

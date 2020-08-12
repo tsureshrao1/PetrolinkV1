@@ -17,17 +17,17 @@
       <div class="row">
          <div class="col-md-8">
             <div class="row">
-               <div class="col-md-6" *ngFor="let career of careers | paginate: config" style="padding: 10px;">
-                  <div class="single-price text-center no">
+               <div class="col-md-6" *ngFor="let career of careers | paginate: config; let i = index" style="padding: 10px;">
+                  <div class="single-price text-center no" (mouseover)="holdSlide_b(i)" (mouseout)="holdSlide_b(i)" >
                      <div class="price-title">
                         <h3>{{career.role}}</h3>
                      </div>
                      <div class="price-list">
-                        <span class="jbsumry">
+                        <div class="jbsumry" [@slideLeft_]="showHold_[i]" >
                            <p class="description">Job Summary</p>
                            <p class="details" style="padding-bottom: 10px !important;">{{career.jobSummary}}</p>
                            <p class="description">Location</p>
-                        </span> 
+                        </div> 
                         <p class="details"><i></i>&nbsp; {{career.location}}</p>
                         <div class="clearfix locApply">
                            <div class="text-right">

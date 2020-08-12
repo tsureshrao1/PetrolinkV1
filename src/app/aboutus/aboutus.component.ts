@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-aboutus',
@@ -10,7 +11,8 @@ export class AboutusComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
+     
   }
 
 }

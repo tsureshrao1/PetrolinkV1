@@ -239,8 +239,7 @@ p {
     text-align: justify;
 }
 .ptb-100 {
-    padding: 100px 0;    
-    
+    padding: 115px 0;        
 }
 .single-icon {
     margin-bottom: 20px;
@@ -876,4 +875,8 @@ ul.vcircle{
     .video { width: auto !important;    height: 640px;}
        
     }
-.sec_pt{ padding:80px 0 0 0;}
+.sec_pt{ padding:115px 0 0 0;}
+
+.no-padding {
+    padding: 0 !important;
+}

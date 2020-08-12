@@ -1,16 +1,15 @@
 .scrollTop{
     bottom: 30px;
     position: fixed;
-    width: 52px;
-    height: 52px;
+    width: 47px;
+    height: 47px;
     right: 30px;
     background: rgb(141, 198, 63);
     color: #fff;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     border-radius: 50%;
     cursor: pointer;
-    line-height: 42px;
     z-index: 100;
     transition: all 0.3s ease-in-out;
 }
@@ -20,4 +19,5 @@
 .scrollTop i{
     color: #fff;
     position: relative;
-    top: 8px;}
+    top: -6px;
+}

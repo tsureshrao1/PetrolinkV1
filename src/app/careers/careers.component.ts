@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, state, transition, style, animate } from '@angular/animations';  
 import { Router } from '@angular/router';
 import { ApiClientService } from './../api-client.service';
 declare var $: any;
@@ -7,11 +8,27 @@ declare var $: any;
 @Component({
   selector: 'app-careers',
   templateUrl: './careers.component.html',
-  styleUrls: ['./careers.component.css']
+  styleUrls: ['./careers.component.css'],
+  animations:[ 
+    trigger('slideLeft_', [
+      state('in', style({
+        height: '175px'
+      })),
+      state('out', style({
+        height: '0px',
+        display: 'block',
+        border: 'none',
+        padding: '0'
+      })),
+      transition('in => out', animate('500ms ease-in-out')),
+      transition('out => in', animate('500ms ease-in-out'))
+    ]
+  )]
 })
 export class CareersComponent implements OnInit {
   careers:[];
   config: any;
+  showHold_ = [];
   successMessage: boolean = false;
   lenghtArea='';
   selectedDate;
@@ -45,6 +62,9 @@ export class CareersComponent implements OnInit {
     this.config.currentPage = event;
   }
 
+  holdSlide_b(i) {
+    this.showHold_[i] = this.showHold_[i] === 'in' ? 'out' : 'in';    
+  }
 
   uploadFile(event){
     const file = event.target.files[0];

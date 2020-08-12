@@ -23,6 +23,7 @@ import { HeaderRouteNavComponent } from './header-route-nav/header-route-nav.com
 import { ChairmanComponent } from './chairman/chairman.component';
 import { HomepageYoutubeComponent } from './homepage-youtube/homepage-youtube.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import * as WOW from 'src/assets/js/wow.min.js';
 
 
 @NgModule({
@@ -55,4 +56,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  ngOnInit(): void { 
+    new WOW().init(); 
+}
+}
