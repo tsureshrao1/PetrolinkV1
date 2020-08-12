@@ -20,7 +20,7 @@ body{
     border-left: none;
     border-right: none;
     position: relative;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .header-container .header-content{
@@ -209,7 +209,6 @@ i {
 }
 p {
     color: #777;
-    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 24px;
@@ -265,11 +264,11 @@ p {
     clear: unset;
 }
 .contact-form form input {
-    background: #ffffff none repeat scroll 0 0;
+    background: #f2f2f2 none repeat scroll 0 0;
     border: 1px solid #aba8a8;
     border-radius: 4px;
-    margin-bottom: 30px;
-    padding-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 input {
@@ -283,11 +282,11 @@ input {
     width: 100%;
 }
 .contact-form form textarea {
-    background: #ffffff none repeat scroll 0 0;
+    background: #f2f2f2 none repeat scroll 0 0;
     border: 1px solid #aba8a8;
     border-radius: 4px;
-    height: 120px;
-    padding-left: 20px;
+    height: 70px;
+    padding-left: 10px;
 }
 textarea {
     resize: vertical;
@@ -301,25 +300,25 @@ textarea {
 
 
 .contact-form form input {
-    background: #ffffff none repeat scroll 0 0;
+    background: #f2f2f2 none repeat scroll 0 0;
     border: 1px solid #aba8a8;
     border-radius: 4px;
-    margin-bottom: 20px;
-    padding-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    height: 40px !important;
 }
 
 .cont-submit {
     background: #8dc63f !important;
     border: 1px solid #8dc63f !important;
-    color: #8dc63f; 
-    font-size: 16px;
+    color: #8dc63f;
+    font-size: 14px;
     font-weight: 600;
-    margin-top: 20px;
-    padding: 8px 30px;
+    margin-top: 5px;
     text-transform: capitalize;
     transition: all 0.4s ease 0s;
     width: auto;
-    padding: 10px 30px !important;
+    padding: 6px 20px 6px 20px !important;
     color: #fff !important;
     border-radius: 25px !important;
 }
@@ -355,20 +354,17 @@ input {
 }
 .contact-sochil-icon.copyright-icon a {
     margin: 0;
-    margin-left: 5px;
+    margin-right: 25px;
     border-radius: 50%;
     font-size: 18px;
 }
 .contact-sochil-icon a {
-    border: 1px solid #333;
+ 
     display: block;
     font-size: 20px;
-    height: 40px;
-    line-height: 39px;
-    margin-right: 8px;
     text-align: center;
     display: inline-block;
-    width: 40px;
+  
 }
 a {
     color: #333;
@@ -379,8 +375,7 @@ a {
 
 
 .contact-sochil-icon a:hover {
-    background: #8dc63f !important;
-    border: 1px solid #8dc63f;
+     
     color: #fff !important;
 }
 a:hover {
@@ -471,7 +466,6 @@ ul {
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
-    font-family: 'Open Sans', sans-serif;
     display: block;
     padding: 10px 0;
 }
@@ -488,7 +482,6 @@ ul {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
     display: block;
     margin-left: 18px !important;
 }
@@ -534,7 +527,7 @@ ul {
   .single-price {
     background-color: #ffffff;
     border-radius: 5px;
-    padding: 0 0 15px;
+    padding: 0 0 10px;
     text-align: center;
     transition: all 0.10s ease 0s;
     box-shadow: 0px 5px 13px rgb(10 16 20 / 0.10), 0 0 2px rgb(10 16 20 / 0.10);
@@ -877,4 +870,10 @@ ul.vcircle{
 .no-padding_ {
     padding-left: 0;
 }
-.text_hide{ display: none;}
+.text_hide{ display: none !important;}
+
+@media (max-width: 767px){
+    .video { width: auto !important;    height: 640px;}
+       
+    }
+.sec_pt{ padding:80px 0 0 0;}

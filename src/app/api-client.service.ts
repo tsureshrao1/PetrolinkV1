@@ -18,6 +18,10 @@ export class ApiClientService {
   applyJob(data:FormData):Observable<any>{
     return this.httpClient.post<any>(this.HOST_NAME+"petrolink/profile",data).pipe();
   }
+  applyJobDirect(data:FormData):Observable<any>{
+    return this.httpClient.post<any>(this.HOST_NAME+"petrolink/directProfile",data).pipe();
+  }
+
 
   login(data):Observable<any>{
     return this.httpClient.post<any>(this.HOST_NAME+"petrolink/admin/user",data).pipe();

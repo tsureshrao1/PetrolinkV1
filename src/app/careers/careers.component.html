@@ -23,13 +23,11 @@
                         <h3>{{career.role}}</h3>
                      </div>
                      <div class="price-list">
-                        <span class="hide-data">
+                        <span class="jbsumry">
                            <p class="description">Job Summary</p>
-                           <p class="details hgtFixed">{{career.jobSummary}}</p>
+                           <p class="details" style="padding-bottom: 10px !important;">{{career.jobSummary}}</p>
                            <p class="description">Location</p>
-                        </span>
-
-
+                        </span> 
                         <p class="details"><i></i>&nbsp; {{career.location}}</p>
                         <div class="clearfix locApply">
                            <div class="text-right">
@@ -241,6 +239,174 @@
                         </div>
                      </div>
                   </div>
+                  <div class="modal fade" id="Modal_direct" tabindex="-1" role="dialog" aria-hidden="true">
+                     <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h5 class="modal-title">Apply Here</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           <div class="modal-body">
+                              <div class="accordion" id="accordionExample">                             
+                                 <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                       <h2 class="mb-0">
+                                          <a class="text-left collapsed" data-toggle="collapse"
+                                             data-target="#collapseThree" aria-expanded="false"
+                                             aria-controls="collapseThree">
+                                             Apply for Job
+                                          </a>
+                                       </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                                       data-parent="#accordionExample">
+                                       <div class="card-body">
+                                          <form autocomplete="off">
+                                             <div class="m-0 pInputs">
+                                                <fieldset>
+                                                   <legend>Personal Information</legend>
+                                                   <div class="row">
+                                                      <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4"
+                                                         [class.has-error]="email.invalid && email.touched"
+                                                         [class.has-success]="email.valid">
+                                                         <input [(ngModel)]="applyJobDirectData.email" required id="email"
+                                                            #email="ngModel" type="email" name="email"
+                                                            class="form-control" placeholder="* Enter email">
+                                                         <div class="text-danger mgtopm8px"
+                                                            *ngIf="email.invalid && email.touched">* Email is required
+                                                         </div>
+                                                      </div>
+                                                      <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4"
+                                                         [class.has-error]="name.invalid && name.touched"
+                                                         [class.has-success]="name.valid">
+                                                         <input [(ngModel)]="applyJobDirectData.name" type="text" id="name"
+                                                            #name="ngModel" name="name" class="form-control"
+                                                            placeholder="* Enter Name" required autocomplete="nope">
+                                                         <div class="text-danger mgtopm8px"
+                                                            *ngIf="name.invalid && name.touched">* Name is required
+                                                         </div>
+                                                      </div>
+                                                      <div
+                                                         class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4 input-group date"
+                                                         data-provide="datepicker">
+                                                         <input [(ngModel)]="applyJobDirectData.dateOfbirth"
+                                                            name="dateOfbirth" type="text"
+                                                            class="form-control datepicker_dob" id="data-date"
+                                                            placeholder="Select DOB" bsDatepicker required
+                                                            autocomplete="nope">
+                                                      </div>
+                                                      <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                                         <input [(ngModel)]="applyJobDirectData.nationality"
+                                                            name="nationality" type="text" class="form-control"
+                                                            placeholder="Enter Nationality" required
+                                                            autocomplete="nope">
+                                                      </div>
+                                                      <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                                         <input [(ngModel)]="applyJobDirectData.phoneNumber"
+                                                            name="phoneNumber" type="text" class="form-control"
+                                                            placeholder="Phone No" required autocomplete="nope">
+                                                      </div>
+                                                      <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                                         <input [(ngModel)]="applyJobDirectData.mobileNumber"
+                                                            name="mobileNumber" type="text" class="form-control"
+                                                            placeholder="Mobile No" required autocomplete="nope">
+                                                      </div>
+                                                   </div>
+                                                </fieldset>
+                                             </div>
+                                             <div class="m-0 carrInputs">
+                                                <fieldset>
+                                                   <legend>Career Information</legend>
+                                                   <div class="row">
+                                                      <div class="form-group col-xs-10 col-sm-12 col-md-12 col-lg-12">
+                                                         <textarea class="form-control txtarea" maxlength="250"
+                                                            [(ngModel)]="applyJobDirectData.describeCurrentJob || lenghtArea"
+                                                            name="describeCurrentJob" placeholder="Describe Current Job"
+                                                            required rows="3"></textarea>
+                                                         <div class="text-danger" *ngIf="lenghtArea?.length >= 250">
+                                                            Maximum
+                                                            Limit 250 Characters</div>
+                                                         <!-- <input [(ngModel)]="applyJobData.describeCurrentJob" maxlength="250" name="describeCurrentJob" type="text"  class="form-control" placeholder="Describe Current Job" required autocomplete="nope"> -->
+                                                      </div>
+                                                      <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                                         <input [(ngModel)]="applyJobDirectData.expAbroad" name="expAbroad"
+                                                            type="text" class="form-control"
+                                                            placeholder="Abroad (Experience in Years)" required
+                                                            autocomplete="nope">
+                                                      </div>
+                                                      <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                                         <input [(ngModel)]="applyJobDirectData.expOthers" name="expOthers"
+                                                            type="text" class="form-control"
+                                                            placeholder="Others  (Experience in Years)" required
+                                                            autocomplete="nope">
+                                                      </div>
+                                                      <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                                         <input [(ngModel)]="applyJobDirectData.qualifications"
+                                                            name="qualifications" type="text" class="form-control"
+                                                            placeholder="Your Qualification" required
+                                                            autocomplete="nope">
+                                                      </div>
+                                                      <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                                         <input [(ngModel)]="applyJobDirectData.joiningPeriod"
+                                                            name="joiningPeriod" type="text" class="form-control"
+                                                            placeholder="When Can You Join?" required
+                                                            autocomplete="nope">
+                                                      </div>
+                                                      <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                                         <input [(ngModel)]="applyJobDirectData.currentSalary"
+                                                            name="currentSalary" type="text" class="form-control"
+                                                            placeholder="Current Salary" required autocomplete="nope">
+                                                      </div>
+                                                      <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                                         <input [(ngModel)]="applyJobDirectData.expSalary" name="expSalary"
+                                                            type="text" class="form-control"
+                                                            placeholder="Expected Salary" required autocomplete="nope">
+                                                      </div>
+                                                      <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                                                         <input [(ngModel)]="applyJobDirectData.presentLocation"
+                                                            name="presentLocation" type="text" class="form-control"
+                                                            placeholder="Current Location" required autocomplete="nope">
+                                                      </div>
+                                                      <div class="form-group col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                                         <div class="custom-file">
+                                                            <input type="file" (change)="uploadFile($event)"
+                                                               class="custom-file-input" id="inputGroupFile01"
+                                                               aria-describedby="inputGroupFileAddon01" required>
+                                                            <label class="custom-file-label"
+                                                               for="inputGroupFile01">Upload
+                                                               Resume</label>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </fieldset>
+                                                <div class="form-group col-xs-10 col-sm-12 col-md-12 col-lg-12 text-center">
+                                                   <button (click)="applyJobDirect()" type="submit"
+                                                      class="btnLink btn-link col-md-12">Apply</button>
+                                                </div>
+                                             </div>
+                                          </form>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="showMsg" #successMessage *ngIf="successMessage">
+                              <div class="boxMsg">
+                                 <div class="text-center text-success txtsuccess">Success!</div>
+                                 <div class="text-center text-success txtCenter">Job Application Submited</div>
+                                 <div class="text-center">
+                                    <a href="javascript:void(0);" data-dismiss="modal"
+                                       class="btn btn-outline-secondary mb-2 mt-2">
+                                       Close
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
@@ -275,13 +441,24 @@
       </div>
    </div>
    <div class="banner_board">
-      <span class="crr_ _left">You can apply online for jobs, by emailing <a>careers@petrolink.com</a> </span>
+      <span class="crr_ _left">You can apply online for jobs, by emailing <a>careers@PetroLinkV1.com</a> </span>
       <i class="email"></i>
       <span class="crr_ ">
          Direct Apply
          <span class="block">Could not find a suitable vacancy?</span>
       </span>
-      <div class="clearfix locApply float-right mt-4">  <a data-toggle="modal" (click)="ModelNot()" href="#" class="button">Apply Here</a> 
+
+      <div class="clearfix locApply float-right mt-4">
+      <a (click)="applyJobDirect()" data-toggle="modal"   data-target="#Modal_direct"
+         class="button">Apply Here</a>
+   </div>
+
+   
+
+     
+
+
+      <div > 
       </div>
 
    </div>

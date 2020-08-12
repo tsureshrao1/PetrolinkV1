@@ -1,14 +1,16 @@
 .gray-bg {
     background: #333333;
-    color: #fff;
-    padding-bottom: 25px;
+    color: #c7c6c6;
+    padding-bottom: 15px;
+    padding-top: 40px;
 }
 .menu-item {
     margin-left: 0 !important;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: normal;
-    padding: 4px 0;
+    padding: 4px 0 3px 0;
 }
+.menu-item a{color: #c7c6c6;}
 .menu-item:hover {
    color: #8dc63f ;
     border-bottom: 0 solid #8dc63f !important;
@@ -17,7 +19,7 @@ h3 {
     text-transform: capitalize;
     font-size: 18px;
     font-weight: normal;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 h3:before {
@@ -38,7 +40,7 @@ h3:before {
 
 .newsletter  input[type='text'] {
     border-radius: 50px;
-    background-color: #fff;
+    background-color: #f2f2f2;
     outline: none;
     padding-left: 44px;
     padding-right: 105px;
@@ -63,6 +65,7 @@ h3:before {
     width: 30px;
     background: url(../../assets/img/mail.svg) no-repeat;
     position: absolute;
-    margin: 16px 0px 0px 20px;
+    margin: 14px 0px 0px 20px;
     background-size: 20px;
 }
+.pt-10{ padding-top: 10px;}

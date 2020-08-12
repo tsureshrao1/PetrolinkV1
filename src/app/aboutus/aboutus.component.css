@@ -6,14 +6,14 @@
 .secTitle h2{
     padding-bottom: 10px;
     padding-top: 10px;
-    font-size: 34px;
+    font-size: 32px !important;
     font-weight: bold;
-    letter-spacing: -1px;
+    letter-spacing: .3px !important;
     margin: 0 !important;
 }
 .secTitle .info_txt{
-    font-size: 13px;
-    color: #7d7b7b;
+    font-size: 13px !important;
+    color: #565455 !important;
 }
 .secTitle .info_txt_{
     color:#555555;
@@ -33,7 +33,7 @@
  
  
 .img_bnr {
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 30px;    
     position: relative;
     z-index: 889;    
@@ -45,11 +45,12 @@
     max-width: 395px;
 }
 .img_bnr img{ 
-        max-width: 375px;
+    max-width: 375px;
     border: 1px solid #f7f0ea;
-    margin-top: -30px;
-    margin-bottom: 25px;
-    margin-left: -25px;
+    margin-top: -5%;
+    margin-bottom: 6%;
+    margin-left: -6%;
+    width: 100%;
 }
 
 .view_txt {
@@ -89,10 +90,10 @@ content: " ";
 .htxt_value_ {
     box-shadow: 0 0 14px #28282840;
     display: block;
-    width: 100%;
-    height: 125px;
+    width: 114%;
+    min-height: 125px;
     position: relative;
-    left: -70px;
+    left: -13%;
     z-index: 999;
     background-color: #ffffff;
 }
@@ -102,20 +103,22 @@ content: " ";
     width: 33%;
     float: left;
     color: #555555;
-    padding: 15px 0  30px 0;
-    border-right: none;
+    border-right: 1px solid #dedede;
+    padding: 15px 0 35px 0;
      
+}
+.htxt_value_ .htxt_:last-child {
+    border-right: none;
 }
 
 .htxt_ span {
     display: block;
     color: #81cc29;
     font-size: 36px;
-    font-weight: 500;
 }
 .icons_list li{   
      display: inline-block;
-    margin: 5px 25px;
+     margin: 5px 22px;
 }
 .icons_list li:first-child{ margin-left: 0; }
 .icons_list li i {
@@ -126,6 +129,7 @@ content: " ";
     background-size: 35px;
     margin: 0 auto;
     border-radius: 35px;
+    margin-bottom: 10px;
 }
 .inte_ {
     background: url(../../assets/img/deal.svg) no-repeat;
@@ -151,17 +155,54 @@ content: " ";
 .vision_ {
     background: url(../../assets/img/vision.svg) no-repeat;
     display: inline-block;
-    width: 45px;
-    height: 45px;
-    background-position: 5px 5px;
+    width: 60px;
+    height: 60px;
+    background-position: 9px 12px;
     background-size: 40px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    float: left;
 }
+.vision_txt {
+    float: left;
+    width: 89%;
+    padding-left: 15px;
+ 
+}
+.vision_txt h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.vision_txt p {
+    color: #797979;
+    font-size: 14px;
+    line-height: 19px;
+}
+.mt-bg{ margin: 10px 0;
+    width: 100%;
+    display: inline-block;}
 
 .mission_ {
     background: url(../../assets/img/mission.svg) no-repeat;
     display: inline-block;
-    width: 45px;
-    height: 45px;
-    background-position: 0px 3px;
-    background-size: 47px;
+    width: 60px;
+    height: 60px;
+    background-position: 11px 9px;
+    background-size: 40px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    float: left;
 }
+.values_ {
+    background: url(../../assets/img/Values.svg) no-repeat;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-position: 11px 9px;
+    background-size: 40px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    float: left;
+}
+

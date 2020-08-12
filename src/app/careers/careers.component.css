@@ -5,6 +5,7 @@
     margin: 0px 4px;
 }
 
+
 .page-number.current{
     background: #8dc63f!important;
     border: 2px solid #FFFFFF;
@@ -40,8 +41,8 @@
     color: #000;
 }
 .secTitle .info_txt{
-    font-size: 13px;
-    color: #7d7b7b;
+    font-size: 11px;
+    color: #565455;
 }
 .secTitle .info_txt_{
     color:#565455;
@@ -73,6 +74,7 @@
     padding: 0px 20px;
     font-size: 14px;
     margin: 0px;
+    color: #6f6f6f;
 }
 
 p.details i {
@@ -82,7 +84,7 @@ p.details i {
     display: inline-block;
     background-size: 13px;
     position: relative;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
 }
 
 .locApply {
@@ -90,15 +92,15 @@ padding: 0 15px;
 }
 
 .locApply .button{
-    color: #3f3f3f;
-    padding: 5px 10px;
+    color: #282828;
+    padding: 5px 15px;
     font-size: 14px;
-    border: 1px solid #c1c1c1;
-    font-weight: 600;
+    border: 1px solid #adadad;
+    font-weight: 400;
     display: inline-block;
     text-decoration: none !important;
     border-radius: 25px;
-    padding-top: 3px;
+    padding-top: 6px;
 }
 .btnLink{
     background: #8dc63f;
@@ -120,6 +122,15 @@ padding: 0 15px;
 
 .single-price:hover{
     box-shadow: 1px 3px 15px rgb(10 16 20 / 0.12), 0 0 11px rgba(10, 16, 20, 0.12);
+}
+.single-price .jbsumry { 
+    opacity: 0;
+    display: none;
+    
+ }
+.single-price:hover .jbsumry { 
+   opacity: 1;
+   display: block; 
 }
 .hgtFixed{
     height:70px; overflow: hidden;
@@ -251,12 +262,12 @@ fieldset .fa-calendar{
 
 .crr_._left {    
     position: relative;
-    border-right: 1px solid #c5c5c5;
+    border-right: 1px solid #212529;
     top: -15px;
 }
 
 .email + .crr_  {    
-    font-size: 21px;
+    font-size: 18px;
     color: #000;
     padding-left: 20px;
 }
@@ -270,7 +281,7 @@ fieldset .fa-calendar{
     top: -3px;
 }
 .crr_ .block { 
-    font-size: 16px;
+    font-size: 14px;
     color: #212529;
 }
 
