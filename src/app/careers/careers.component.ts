@@ -12,13 +12,12 @@ declare var $: any;
   animations:[ 
     trigger('slideLeft_', [
       state('in', style({
-        height: '175px'
+        transform: 'scale(1.1)',
+        height: '0'
       })),
       state('out', style({
-        height: '0px',
-        display: 'block',
-        border: 'none',
-        padding: '0'
+        transform: 'scale(0)',
+        height: '100%'
       })),
       transition('in => out', animate('500ms ease-in-out')),
       transition('out => in', animate('500ms ease-in-out'))

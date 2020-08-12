@@ -18,15 +18,14 @@
          <div class="col-md-8">
             <div class="row">
                <div class="col-md-6" *ngFor="let career of careers | paginate: config; let i = index" style="padding: 10px;">
-                  <div class="single-price text-center no" (mouseover)="holdSlide_b(i)" (mouseout)="holdSlide_b(i)" >
+                  <div class="single-price text-center no" >
                      <div class="price-title">
                         <h3>{{career.role}}</h3>
                      </div>
-                     <div class="price-list">
-                        <div class="jbsumry" [@slideLeft_]="showHold_[i]" >
+                     <div class="price-list" >
+                        <div class="jbsumry"  >
                            <p class="description">Job Summary</p>
-                           <p class="details" style="padding-bottom: 10px !important;">{{career.jobSummary}}</p>
-                           <p class="description">Location</p>
+                           <p class="details" style="padding-bottom: 10px !important;">{{career.jobSummary}}</p>                            
                         </div> 
                         <p class="details"><i></i>&nbsp; {{career.location}}</p>
                         <div class="clearfix locApply">
@@ -35,6 +34,12 @@
                                  data-target="#Modal_{{career.id}}" class="button">Apply Now</a>
                            </div>
                         </div>
+                     </div>
+                     <div class="details_apply_">
+                        <h3>{{career.role}}</h3>
+                        <p class="details" style="padding-bottom: 10px !important;">{{career.jobSummary}}</p>  
+                        <p class="details"><i></i>&nbsp; {{career.location}}</p>
+                        <a data-toggle="modal" (click)="ModelNot()" href="#Modal_{{career.id}}"  data-target="#Modal_{{career.id}}" class="button">Apply Now</a>
                      </div>
                   </div>
                   <div class="modal fade" id="Modal_{{career.id}}" tabindex="-1" role="dialog" aria-hidden="true">
