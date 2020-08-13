@@ -116,13 +116,13 @@ content: " ";
 }
 .icons_list li{   
      display: inline-block;
-     margin:5px 40px;
+     margin:5px 48px;
 }
 .icons_list li:first-child{ margin-left: 0; }
 .icons_list li i {
     width: 60px;
     height: 60px;
-    background-color: #bebebe;
+    background-color: #81cc29;
     display: block;
     background-size: 35px;
     margin: 0 auto;
