@@ -45,7 +45,7 @@
 .secTitle .info_txt_{
     color:#565455;
 }
-
+/*
 .secTitle h2:before {
     content: "";
     display: inline-block;
@@ -56,7 +56,7 @@
     top: 15px;
     left: 40px;
     margin-right: -60px
-} 
+}*/ 
 .careers-area {
     background:url(../../assets/img/bg-8.jpg)no-repeat;
     background-position: right center;
@@ -271,7 +271,7 @@ fieldset .fa-calendar{
 
 .crr_._left {    
     position: relative;
-    border-right: 1px solid #212529;
+    border-right: 1px solid #e0e0e0;
     top: -15px;
 }
 
@@ -291,6 +291,6 @@ fieldset .fa-calendar{
 }
 .crr_ .block { 
     font-size: 14px;
-    color: #212529;
+    color: #212529ab;
 }
 

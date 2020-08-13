@@ -23,7 +23,7 @@
 .secTitle .info_txt_{
     color:#555555;
 }
-
+/*
 .secTitle h2:before {
     content: "";
     display: inline-block;
@@ -34,7 +34,7 @@
     top: 15px;
     left: 142px;
     margin-right: -60px
-} 
+} */
 .icons_container span {
  display: inline-block;
 }
@@ -57,7 +57,7 @@ margin-top: 65px;
 margin-left:13%;
 margin-bottom: 70px;
 }
-.sig_{ width: 100%; text-align: center;}
+.sig_{ width: 80%; text-align: center;}
 .sig_ > span{
     font-size: 18px;
     font-weight: 500;

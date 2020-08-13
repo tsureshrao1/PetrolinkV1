@@ -17,7 +17,7 @@
 .secTitle .info_txt_{
     color:#eaeae9;
 }
-
+/*
 .secTitle h2:before {
     content: "";
     display: inline-block;
@@ -28,7 +28,7 @@
     top: 15px;
     left: 75px;
     margin-right: -60px
-} 
+} */
 .projects-area{ 
     background-image: url(../../assets/img/bg-6.jpg);
     background-repeat: no-repeat;

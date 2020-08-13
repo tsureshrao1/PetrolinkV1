@@ -24,6 +24,9 @@
 .menu-item , .navbar-light.sticky_nav .menu-item{ 
     color: #565656 !important;
 }
+.navbar {  
+    padding: 0.2rem 1rem !important;
+}
 .navbar-brand img{
     height: 80px;
     padding: 3px 0px;
