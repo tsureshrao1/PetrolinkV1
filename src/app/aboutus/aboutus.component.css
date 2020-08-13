@@ -116,13 +116,13 @@ content: " ";
 }
 .icons_list li{   
      display: inline-block;
-     margin: 5px 22px;
+     margin:5px 40px;
 }
 .icons_list li:first-child{ margin-left: 0; }
 .icons_list li i {
     width: 60px;
     height: 60px;
-    background-color: #82ca28;
+    background-color: #bebebe;
     display: block;
     background-size: 35px;
     margin: 0 auto;
@@ -131,19 +131,19 @@ content: " ";
 }
 .inte_ {
     background: url(../../assets/img/deal.svg) no-repeat;
-    background-position: 11px 10px;
+    background-position: 12px 13px;
 }
 .reli_ {
     background: url(../../assets/img/reliability.svg) no-repeat;
-    background-position: 11px 10px;
+    background-position: 15px 12px;
 }
 .Own_ {
     background: url(../../assets/img/key.svg) no-repeat;
-    background-position: 11px 10px;
+    background-position: 13px 13px;
 }
 .tea_ {
     background: url(../../assets/img/puzzle.svg) no-repeat;
-    background-position: 11px 10px;
+    background-position: 13px 13px;
 }
 .cre_ {
     background: url(../../assets/img/money.svg) no-repeat;
@@ -157,19 +157,20 @@ content: " ";
     height: 60px;
     background-position: 9px 12px;
     background-size: 40px;
-    background-color: #f2f2f2;
-    border-radius: 50%;
-    float: left;
+    position: relative;
+    top: 25px;
+    left: 28px;
 }
+
 .vision_txt {
     float: left;
-    width: 89%;
+    width: 87%;
     padding-left: 15px;
  
 }
 .vision_txt h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .vision_txt p {
@@ -177,7 +178,7 @@ content: " ";
     font-size: 14px;
     line-height: 19px;
 }
-.mt-bg{ margin: 10px 0;
+.mt-bg{ margin: 20px 25px 20px 25px;
     width: 100%;
     display: inline-block;}
 
@@ -186,21 +187,27 @@ content: " ";
     display: inline-block;
     width: 60px;
     height: 60px;
-    background-position: 11px 9px;
-    background-size: 40px;
-    background-color: #f2f2f2;
-    border-radius: 50%;
-    float: left;
+    background-position: 2px 3px;
+  position: relative;
+    top: 25px;
+    left: 28px;
 }
+
 .values_ {
     background: url(../../assets/img/Values.svg) no-repeat;
     display: inline-block;
     width: 60px;
     height: 60px;
-    background-position: 11px 9px;
-    background-size: 40px;
-    background-color: #f2f2f2;
-    border-radius: 50%;
-    float: left;
+    background-position: 7px 6px;
+    background-size: 50px;
+    position: relative;
+    top: 25px;
+    left: 28px;
 }
 
+.icon_bg{ background: url(../../assets/img/icon_bg.png) no-repeat;
+    width: 120px;
+    height: 120px;
+    background-size: 100%;
+    float: left;
+}

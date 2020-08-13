@@ -79,11 +79,13 @@
 
  
 .pro_slider{
- 
-    margin: 5%;
+    padding: 15% 10% 10% 10%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.pro_slider h4{ font-size: 26px; padding-bottom: 10px;}
+
+.pro_slider p{ font-size: 18px;}
 
 .carousel-item.active {
     border: none;
@@ -121,7 +123,7 @@
   content: '🡒';
   font-size: 35px;
   color: #9a9a9a;
-  top: 0px;
+  top: 3px;
   position: relative;
 }
 
@@ -133,3 +135,10 @@
     position: relative;
 }
 
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    left: 14px;
+    top: -1px;
+}
