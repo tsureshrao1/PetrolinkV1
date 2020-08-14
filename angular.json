@@ -27,11 +27,13 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css", 
+              "./node_modules/wowjs/css/libs/animate.css",
               "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css" 
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",
               "./node_modules/bootstrap/dist/js/bootstrap.js",
+              "./node_modules/wowjs/dist/wow.js",
               "src/assets/js/typingEffect.js"
             ]
           },

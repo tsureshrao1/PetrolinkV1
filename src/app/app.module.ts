@@ -5,10 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { NgxPaginationModule } from 'ngx-pagination';
-
 import { AppRoutingModule, routingComponents } from './app-routing.module';
-
-
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactusComponent } from './contactus/contactus.component';
@@ -23,7 +20,8 @@ import { HeaderRouteNavComponent } from './header-route-nav/header-route-nav.com
 import { ChairmanComponent } from './chairman/chairman.component';
 import { HomepageYoutubeComponent } from './homepage-youtube/homepage-youtube.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import * as WOW from 'src/assets/js/wow.min.js';
+import { NgwWowModule } from 'ngx-wow';
+
 
 
 @NgModule({
@@ -47,6 +45,7 @@ import * as WOW from 'src/assets/js/wow.min.js';
     BrowserModule,
     AppRoutingModule,
     NgxPaginationModule,
+    NgwWowModule,
     HttpClientModule,
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
@@ -56,8 +55,4 @@ import * as WOW from 'src/assets/js/wow.min.js';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-  ngOnInit(): void { 
-    new WOW().init(); 
-}
-}
+export class AppModule { }
