@@ -12,7 +12,7 @@ export class HeaderNavComponent implements OnInit {
   selected:string;  
   constructor(@Inject(DOCUMENT) private document: Document) { }
 
-  ngOnInit(): void {    
+  ngOnInit(): void {                 
   }
   
   scrollToDiv(divName){
@@ -26,7 +26,8 @@ export class HeaderNavComponent implements OnInit {
     }
     else {
         document.getElementById('subTitle').classList.remove('sticky_nav');        
-      }   
+      }
+      this.onWindowActive()
     }
     
     onWindowActive() {

@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 declare var $: any;
 
 @Component({
   selector: 'app-video-banner',
   templateUrl: './video-banner.component.html',
-  styleUrls: ['./video-banner.component.css']
+  styleUrls: ['./video-banner.component.css'],
+  encapsulation : ViewEncapsulation.None
 })
 export class VideoBannerComponent implements OnInit {
 

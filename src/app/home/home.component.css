@@ -1,8 +1,8 @@
 .scrollTop{
     bottom: 30px;
     position: fixed;
-    width: 47px;
-    height: 47px;
+    width: 45px;
+    height: 45px;
     right: 30px;
     background: rgb(141, 198, 63);
     color: #fff;
@@ -12,6 +12,7 @@
     cursor: pointer;
     z-index: 100;
     transition: all 0.3s ease-in-out;
+    line-height: 1.28888;
 }
 .scrollTop:hover{
     background:#8dc63f;
