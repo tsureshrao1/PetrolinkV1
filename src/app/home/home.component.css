@@ -16,8 +16,10 @@
 .scrollTop:hover{
     background:#8dc63f;
 }
+
+
 .scrollTop i{
     color: #fff;
     position: relative;
-    top: -6px;
+    top: -3px;
 }

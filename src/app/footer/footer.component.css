@@ -22,17 +22,43 @@ h3 {
     margin-bottom: 30px;
 }
 
-h3:before {
+.Write:before {
     content: "";
     display: inline-block;
     height: 3px;
-    width: 55px;
+    width: 95px;
     background-color: rgb(141, 198, 63);
-    position: relative;
-    top: 15px;
-    left: -3px;
-    margin-right: -60px
+    position: absolute;
+    top: 48px;
+    left: 15px;
 } 
+.quick:before {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 85px;
+    background-color: rgb(141, 198, 63);
+    position: absolute;
+    top: 48px;
+    left: 15px;
+}
+.social h3{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.social:before {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 90px;
+    background-color: rgb(141, 198, 63);
+    position: absolute;
+    top: 27px;
+    left: 15px;
+} 
+
 
 .newsletter {
     margin-top: 10px;
