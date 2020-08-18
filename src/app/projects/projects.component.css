@@ -87,8 +87,8 @@
 .pro_slider p{ font-size: 18px;}
 .svg_crve {
     position: absolute;
-    top: -1px;
-    left: -82px;
+    top: 0px;
+    left: -52px;
 }
 .carousel-item.active {
     border: none;
@@ -102,7 +102,7 @@
 
  
 .carousel-control-prev {
-    left: -45px;
+    left: -31px;
 }
 .carousel-control-next {
     right: -31px;

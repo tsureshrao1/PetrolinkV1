@@ -23,6 +23,7 @@
 }
 .menu-item , .navbar-light.sticky_nav .menu-item{ 
     color: #565656 !important;
+    letter-spacing: .3px;
 }
 .navbar {  
     padding: 0.2rem 1rem !important;
@@ -37,6 +38,7 @@
  
 .navbar-light .navbar-nav .nav-link {
     color: #fff  ;
+    letter-spacing: .3px;
 }
 
 
