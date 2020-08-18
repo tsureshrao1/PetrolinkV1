@@ -11,8 +11,8 @@
      <!--<a class="viewMoreButton">View More</a> --> 
     </div>
     <div class="header-footer">
-      <a (click)="videoPlayClick()"><i class="fa fa-play"></i></a>
-      <a (click)="videoPauseClick()"><i class="fa fa-pause"></i></a>
+      <a (click)="videoPlayClick()" *ngIf="btnview"><i class="fa fa-play"></i></a>
+      <a (click)="videoPauseClick()" *ngIf="!btnview" ><i class="fa fa-pause"></i></a>
     </div>
 </div>
 

@@ -1,7 +1,7 @@
-<div class="careers-area ptb-100 pb-70 hth-100" id="careers" *ngIf="careers">
-   <div class="container">
+<div class="careers-area ptb-100 pb-70 hth-100" id="careers" >
+   <div class="container" *ngIf="careers">
       <div class="row">
-         <div class="col-md-12">
+         <div class="col-md-12 wow fadeInDown">
             <div class="secTitle text-center">
                <span class="info_txt">We Are PetrolLink Holding Company</span>
                <h2 class="text-center mb-4">CAREERS</h2>
@@ -11,13 +11,13 @@
       </div>
       <div class="row">
          <div class="col-md-12">
-            <h2 class="open_">Current Openings</h2>
+            <h2 class="open_ wow fadeInLeft">Current Openings</h2>
          </div>
       </div>
       <div class="row">
          <div class="col-md-8">
             <div class="row">
-               <div class="col-md-6" *ngFor="let career of careers | paginate: config; let i = index" style="padding: 10px;">
+               <div class="col-md-6 wow fadeInRight" *ngFor="let career of careers | paginate: config; let i = index" style="padding: 10px;">
                   <div class="single-price text-center no" >
                      <div class="price-title">
                         <h3>{{career.role}}</h3>
@@ -445,7 +445,7 @@
          <div class="col-md-2"></div>
       </div>
    </div>
-   <div class="banner_board">
+   <div class="banner_board wow fadeInUp " *ngIf="careers">
       <span class="crr_ _left">You can apply online for jobs, by emailing <a>careers@PetroLinkV1.com</a> </span>
       <i class="email"></i>
       <span class="crr_ ">
@@ -453,7 +453,7 @@
          <span class="block">Could not find a suitable vacancy?</span>
       </span>
 
-      <div class="clearfix locApply float-right mt-4">
+      <div class="clearfix locApply float-right">
       <a (click)="applyJobDirect()" data-toggle="modal"   data-target="#Modal_direct"
          class="button">Apply Here</a>
    </div>
@@ -467,9 +467,7 @@
       </div>
 
    </div>
-</div>
-<div class="careers-area ptb-100 pb-70 hth-100" id="careers" *ngIf="!careers?.length">
-   <div class="container">
+   <div class="container" *ngIf="!careers?.length">
       <div class="row">
          <div class="col-lg-12">
             <div class="section-title text-center">

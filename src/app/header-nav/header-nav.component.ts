@@ -16,7 +16,7 @@ export class HeaderNavComponent implements OnInit {
   }
   
   scrollToDiv(divName){
-    document.getElementById(divName).scrollIntoView({behavior:"smooth"});     
+    document.getElementById(divName).scrollIntoView({behavior:"smooth"});      
   } 
 
   @HostListener('window:scroll', [])  
@@ -53,22 +53,23 @@ export class HeaderNavComponent implements OnInit {
     } else {
       document.getElementById("subsidiaries_a").classList.remove('active');
     }
-    if ( scrollPosition >= document.getElementById('projects').offsetTop && scrollPosition < document.getElementById('projects').scrollHeight + document.getElementById('projects').offsetTop ) {
+    if ( scrollPosition >= document.getElementById('projects').offsetTop  && scrollPosition < document.getElementById('projects').scrollHeight + document.getElementById('projects').offsetTop -1 ) {
       document.getElementById("projects_a").classList.add('active');
     } else {
       document.getElementById("projects_a").classList.remove('active');
     }
-    if ( scrollPosition >= document.getElementById('careers').offsetTop && scrollPosition < document.getElementById('careers').scrollHeight + document.getElementById('careers').offsetTop ) {
+    if ( scrollPosition >= document.getElementById('careers').offsetTop - 1  && scrollPosition  < document.getElementById('careers').scrollHeight + document.getElementById('careers').offsetTop - 16 ) {
       document.getElementById("careers_a").classList.add('active');
     } else {
       document.getElementById("careers_a").classList.remove('active');
     }
-    if ( scrollPosition >= document.getElementById('contact').offsetTop && scrollPosition < document.getElementById('contact').scrollHeight + document.getElementById('contact').offsetTop ) {
+    if ( scrollPosition >= document.getElementById('contact').offsetTop - 1 && scrollPosition < document.getElementById('contact').scrollHeight + document.getElementById('contact').offsetTop ) {
       document.getElementById("contact_a").classList.add('active');
     } else {
       document.getElementById("contact_a").classList.remove('active');
-    }
-  
+    }  
+    console.log(scrollPosition);
+    console.log(document.getElementById('careers').scrollHeight + document.getElementById('careers').offsetTop);
   } 
     
 

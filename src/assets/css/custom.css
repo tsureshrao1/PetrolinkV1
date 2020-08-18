@@ -425,13 +425,7 @@ ul {
     padding: 10px 0;
 }
 
-.menu-item:hover{
-    text-decoration: underline;
-    border-bottom: 3px solid #8dc63f;
-}
-.active{
-    border-bottom: 3px solid #8dc63f;
-}
+ 
 .menu-item{
     cursor: pointer;
     font-size: 13px;

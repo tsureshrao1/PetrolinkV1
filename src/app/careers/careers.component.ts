@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';  
 import { Router } from '@angular/router';
 import { ApiClientService } from './../api-client.service';
@@ -9,20 +9,7 @@ declare var $: any;
   selector: 'app-careers',
   templateUrl: './careers.component.html',
   styleUrls: ['./careers.component.css'],
-  animations:[ 
-    trigger('slideLeft_', [
-      state('in', style({
-        transform: 'scale(1.1)',
-        height: '0'
-      })),
-      state('out', style({
-        transform: 'scale(0)',
-        height: '100%'
-      })),
-      transition('in => out', animate('500ms ease-in-out')),
-      transition('out => in', animate('500ms ease-in-out'))
-    ]
-  )]
+  encapsulation : ViewEncapsulation.None 
 })
 export class CareersComponent implements OnInit {
   careers:[];

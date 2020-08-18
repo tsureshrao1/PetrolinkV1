@@ -11,10 +11,7 @@
     padding: 4px 0 3px 0;
 }
 .menu-item a{color: #c7c6c6;}
-.menu-item:hover {
-   color: #8dc63f ;
-    border-bottom: 0 solid #8dc63f !important;
-}
+ 
 h3 {
     text-transform: capitalize;
     font-size: 18px;

@@ -9,6 +9,8 @@ declare var $: any;
 })
 export class VideoBannerComponent implements OnInit {
 
+  btnview = true;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -17,10 +19,12 @@ export class VideoBannerComponent implements OnInit {
   videoPlayClick(){
     $("#video").get(0).play();
     $("#video").prop('muted', false);
+    this.btnview = false;
   }
 
   videoPauseClick(){
     $("#video").get(0).pause();
+    this.btnview = true;
   }
 
 }

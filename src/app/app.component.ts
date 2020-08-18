@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { Component, HostListener, Inject, OnInit, ViewEncapsulation } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';  
 import { DOCUMENT } from '@angular/common';
 import { NgwWowService } from 'ngx-wow';
@@ -9,6 +9,7 @@ declare var $: any;
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  encapsulation : ViewEncapsulation.None,
   animations:[ 
     trigger('fade',
     [ 

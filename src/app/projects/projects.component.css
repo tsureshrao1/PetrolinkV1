@@ -68,11 +68,10 @@
     background-color: #fff;
     height: 100%;
     border-radius: 6px;
-    border: 1px solid #fafeff;
+    border: none;
     background-color: #fff;
     height: 100%;
-    border-radius: 6px;
-    border: 1px solid #fafeff;
+    border-radius: 6px;    
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
@@ -86,7 +85,11 @@
 .pro_slider h4{ font-size: 26px; padding-bottom: 10px;}
 
 .pro_slider p{ font-size: 18px;}
-
+.svg_crve {
+    position: absolute;
+    top: -1px;
+    left: -82px;
+}
 .carousel-item.active {
     border: none;
     border-radius: 5px 0 0px 5px;
@@ -123,7 +126,7 @@
   content: '🡒';
   font-size: 35px;
   color: #9a9a9a;
-  top: 3px;
+  top: 0;
   position: relative;
 }
 
@@ -140,5 +143,5 @@
     width: 100%;
     overflow: hidden;
     left: 14px;
-    top: -1px;
+    top: 0;
 }
