@@ -58,7 +58,7 @@
 }
 @media only screen and (max-width: 768px) { 
     .img_bnr_ img { 
-        margin-bottom: 15px;
+        margin-bottom: 15px !important;
     }
     .sig_ {
         margin: 0 auto;

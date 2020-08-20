@@ -237,10 +237,12 @@ content: " ";
         margin:15px;
     }
     .vision_txt {
-        width: 65%;
+        width: 100%;
         padding-left: 15px;
+        text-align: justify;
     }
     .icons_list li {
         margin: 15px 8px 0 0;
     }
+    .secTitle h2{  font-size: 34px !important; }
 }

@@ -12,6 +12,9 @@
 }
 .menu-item a{color: #c7c6c6;}
  
+.navbar-nav-footer{}
+.navbar-nav-footer li{ padding: 3px 0;}
+.navbar-nav-footer li a{ cursor: pointer;}
 
 h3 {
     text-transform: capitalize;
@@ -29,7 +32,7 @@ h3 {
     background-color: rgb(141, 198, 63);
     position: absolute;
     top: 30px;
-    left: 15px;
+    
 } 
 .quick:before {
     content: "";
@@ -39,7 +42,7 @@ h3 {
     background-color: rgb(141, 198, 63);
     position: absolute;
     top: 30px;
-    left: 15px;
+   
 }
 .social h3{
     text-transform: capitalize;
@@ -56,7 +59,7 @@ h3 {
     background-color: rgb(141, 198, 63);
     position: absolute;
     top: 30px;
-    left: 15px;
+   
 } 
 
 
@@ -102,4 +105,5 @@ h3 {
     .footer_logo { 
         margin-bottom: 15px;
     }
+    
 }
