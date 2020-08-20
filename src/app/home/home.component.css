@@ -23,5 +23,5 @@
 .scrollTop i{
     color: #fff;
     position: relative;
-    top: 2px;
+    top: -2px;
 }

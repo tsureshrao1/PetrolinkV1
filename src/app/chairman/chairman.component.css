@@ -3,7 +3,8 @@
     background-color: #eff3f6;
     background-image: url(../../assets/img/bg-5.png);
     background-repeat: no-repeat;
-    background-position: right 0;
+    background-position: right bottom;
+    background-size: contain;
 }
  
 .textIndent1{     color: #555555;font-size: 14px;  line-height: 21px;}
@@ -23,18 +24,28 @@
 .secTitle .info_txt_{
     color:#555555;
 }
-/*
-.secTitle h2:before {
+ 
+.secTitle h2::after {
     content: "";
-    display: inline-block;
-    height: 3px;
-    width: 55px;
-    background-color: rgb(141, 198, 63);
+    display: none;   
+}  
+.htxt_border {
     position: relative;
-    top: 15px;
-    left: 142px;
-    margin-right: -60px
-} */
+    display: block;
+}
+.secTitle .htxt_border::after {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 168px;
+    background: url(../../assets/img/text_line.svg) no-repeat;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
 .icons_container span {
  display: inline-block;
 }
@@ -44,6 +55,15 @@
 }
 .icons_container img:first-child {
     margin-left: 0;
+}
+@media only screen and (max-width: 768px) { 
+    .img_bnr_ img { 
+        margin-bottom: 15px;
+    }
+    .sig_ {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
 }
 .img_bnr_ {
     background: url(../../assets/img/ch_.svg) no-repeat;

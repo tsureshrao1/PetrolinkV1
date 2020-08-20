@@ -12,11 +12,13 @@
 }
 .menu-item a{color: #c7c6c6;}
  
+
 h3 {
     text-transform: capitalize;
     font-size: 18px;
     font-weight: normal;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .Write:before {
@@ -26,7 +28,7 @@ h3 {
     width: 95px;
     background-color: rgb(141, 198, 63);
     position: absolute;
-    top: 48px;
+    top: 30px;
     left: 15px;
 } 
 .quick:before {
@@ -36,7 +38,7 @@ h3 {
     width: 85px;
     background-color: rgb(141, 198, 63);
     position: absolute;
-    top: 48px;
+    top: 30px;
     left: 15px;
 }
 .social h3{
@@ -44,6 +46,7 @@ h3 {
     font-size: 18px;
     font-weight: normal;
     margin-bottom: 30px;
+    position: relative;
 }
 .social:before {
     content: "";
@@ -52,7 +55,7 @@ h3 {
     width: 90px;
     background-color: rgb(141, 198, 63);
     position: absolute;
-    top: 27px;
+    top: 30px;
     left: 15px;
 } 
 
@@ -92,3 +95,11 @@ h3 {
     background-size: 20px;
 }
 .pt-10{ padding-top: 10px;}
+.footer_logo {
+    width: 170px; margin-bottom: 75px;
+}
+@media only screen and (max-width: 768px) { 
+    .footer_logo { 
+        margin-bottom: 15px;
+    }
+}

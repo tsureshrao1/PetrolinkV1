@@ -16,7 +16,7 @@ body{
 }
 .header-container{
     width: 100%;
-    height: 640px;
+    height: 100%;
     border-left: none;
     border-right: none;
     position: relative;
@@ -69,16 +69,16 @@ body{
     box-shadow: 0px 0px 3px #353535;
 }
 .video-container{
-    position: absolute;
+   /* position: absolute;
     top: 0px;
-    left: 0px;
+    left: 0px;*/
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
 video{
-    position: absolute;
+    position: relative;
     z-index: -1;
     opacity: 0.78;
     width: 100%;
@@ -356,7 +356,7 @@ input {
 }
 .contact-sochil-icon.copyright-icon a {
     margin: 0;
-    margin-right: 25px;
+    margin-right: 15px;
     border-radius: 50%;
     font-size: 18px;
 }
@@ -890,11 +890,11 @@ ul.vcircle{
     padding-left: 0;
 }
 .text_hide{ display: none !important;}
-
+/*
 @media (max-width: 767px){
     .video { width: auto !important;    height: 640px;}
        
-    }
+    }*/
 .sec_pt{ padding:115px 0 0 0;}
 
 .no-padding {

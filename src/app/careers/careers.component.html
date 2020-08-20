@@ -15,7 +15,7 @@
          </div>
       </div>
       <div class="row">
-         <div class="col-md-8">
+         <div class="col-md-12 col-lg-8">
             <div class="row">
                <div class="col-md-6 wow fadeInRight" *ngFor="let career of careers | paginate: config; let i = index" style="padding: 10px;">
                   <div class="single-price text-center no" >
@@ -446,16 +446,20 @@
       </div>
    </div>
    <div class="banner_board wow fadeInUp " *ngIf="careers">
-      <span class="crr_ _left">You can apply online for jobs, by emailing <a>careers@PetroLinkV1.com</a> </span>
-      <i class="email"></i>
-      <span class="crr_ ">
-         Direct Apply
-         <span class="block">Could not find a suitable vacancy?</span>
-      </span>
-
-      <div class="clearfix locApply float-right">
-      <a (click)="applyJobDirect()" data-toggle="modal"   data-target="#Modal_direct"
-         class="button">Apply Here</a>
+      <div class="row">
+         <div class="col-md-6 no-padding text-right">
+            <span class="crr_ _left">You can apply online for jobs, by emailing <a>careers@PetroLinkV1.com</a> </span>
+         </div>
+         <div class="col-md-6 no-padding">
+            <i class="email"></i>
+            <span class="crr_ ">
+               Direct Apply <span class="block">Could not find a suitable vacancy?</span>
+            </span>
+      
+            <div class="clearfix locApply float-right">
+               <a (click)="applyJobDirect()" data-toggle="modal" data-target="#Modal_direct" class="button">Apply Here</a>
+            </div>
+         </div>
    </div>
 
    

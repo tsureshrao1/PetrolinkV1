@@ -61,6 +61,20 @@ a{
 .img_logo_ img{ 
  width: 110px;
 }
+.img_logo_.mobile {
+    display: none;
+}
+@media only screen and (max-width: 768px) { 
+    .logo_infotxt {
+        width: 100%;
+    }
+    .img_logo_.mobile_ {
+        display: none;
+    }
+    .img_logo_.mobile {
+        display: block;
+    }
+}
  
 .logo_infotxt {
     float: left;

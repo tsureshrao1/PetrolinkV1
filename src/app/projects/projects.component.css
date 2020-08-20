@@ -85,6 +85,15 @@
 .pro_slider h4{ font-size: 26px; padding-bottom: 10px;}
 
 .pro_slider p{ font-size: 18px;}
+
+@media only screen and (max-width: 1024px) {
+    .svg_crve, .carousel-control-prev-icon, .carousel-control-next-icon {
+        display: none;
+    }
+    .carousel.pointer-event {
+        overflow: hidden;
+    }
+  }
 .svg_crve {
     position: absolute;
     top: 0px;

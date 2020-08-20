@@ -48,6 +48,13 @@
     bottom: 0;
     z-index: 87;
 }
+@media only screen and (max-width: 768px) {
+    .contact-icon {
+        padding-left: 10%;
+        margin-bottom: 35px;
+    }
+
+}
 .contact-icon p{
     color:#555;
     padding-left: 58px;

@@ -228,3 +228,19 @@ content: " ";
     background-size: 100%;
     float: left;
 }
+
+@media only screen and (max-width: 768px) {
+    .img_bnr {
+        margin-bottom: 15px;
+    }
+    .mt-bg {
+        margin:15px;
+    }
+    .vision_txt {
+        width: 65%;
+        padding-left: 15px;
+    }
+    .icons_list li {
+        margin: 15px 8px 0 0;
+    }
+}
