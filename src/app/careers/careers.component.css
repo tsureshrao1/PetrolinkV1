@@ -27,7 +27,7 @@
 }
 /***********/
  
-.textIndent1{     color: #555555;font-size: 14px;  line-height: 21px;}
+.textIndent1{     color: #555555;font-size: 15px;  line-height: 21px;}
 .secTitle { margin-bottom: 20px;}
 .secTitle h2{
     padding-bottom: 10px;
@@ -88,7 +88,7 @@ p.details i {
 }
 
 .locApply {
-padding: 0 15px; 
+padding: 0 35px; 
 margin-top: 15px;
 }
 
@@ -115,12 +115,14 @@ margin-top: 15px;
     display: inline-block;
     text-decoration:none !important;
     width:100px;
+    border-radius: 25px;
 }
 .locApply .button:hover,.btnLink:hover{
     background: #fff;
     color: #81cc29; 
     box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
     transition: all 0.3s ease; 
+    border-radius: 25px;
 }
 
 .single-price:hover {
@@ -291,7 +293,7 @@ fieldset .fa-calendar{
     width: 47px;
     height: 35px;
     background: url(../../assets/img/mail.svg);
-    margin-left: 15px;
+    margin-left: -15px;
     position: relative;
     top: -3px;
 }
