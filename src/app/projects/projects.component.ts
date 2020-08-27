@@ -7,10 +7,19 @@ declare var $: any;
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-
+slide_togg = true;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
+    $('.carousel').carousel({
+      interval: 2500
+    })
   }
+
+  toggfunc() {
+    this.slide_togg = !this.slide_togg;
+  }
+
+
 
 }

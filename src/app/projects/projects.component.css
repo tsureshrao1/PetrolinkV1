@@ -78,13 +78,13 @@
 
  
 .pro_slider{
-    padding: 15% 10% 10% 10%;
+    padding: 15px 25px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.pro_slider h4{ font-size: 26px; padding-bottom: 10px;}
+.pro_slider h4{ font-size: 26px; padding-bottom: 10px; margin-top: 26%; margin-left: 5%;}
 
-.pro_slider p{ font-size: 18px;}
+.pro_slider p{ font-size: 18px; margin-left: 5%;}
 
 @media only screen and (max-width: 1024px) {
     .svg_crve, .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -153,4 +153,28 @@
     overflow: hidden;
     left: 14px;
     top: 0;
+}
+
+.click-btn {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    text-shadow: 0 0 0 #282828;   
+    opacity: 0.7;  
+}
+.click-btn {
+    opacity: 1;
+    transition: all .3s ease 0s;
+}
+
+
+.click-btn i { 
+    color: #565455;
+    cursor: pointer;
+    font-size: 27px;
+    margin: 0 2px;
+    text-shadow: 1px 2px 0 #00000033;
+}
+.click-btn i.active_ { 
+    color: #8dc63f;
 }
