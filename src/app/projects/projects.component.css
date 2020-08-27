@@ -135,7 +135,7 @@
   content: '🡒';
   font-size: 35px;
   color: #9a9a9a;
-  top: 0;
+  top: 3px;
   position: relative;
 }
 
@@ -143,7 +143,7 @@
   content: '🡐';
   font-size: 35px;
     color: #9a9a9a;
-    top: 0px;
+    top: 3px;
     position: relative;
 }
 
@@ -169,11 +169,11 @@
 
 
 .click-btn i { 
-    color: #565455;
+    color: #989898;
     cursor: pointer;
     font-size: 27px;
     margin: 0 2px;
-    text-shadow: 1px 2px 0 #00000033;
+    text-shadow: 0px 1px 0 #00000033;
 }
 .click-btn i.active_ { 
     color: #8dc63f;
