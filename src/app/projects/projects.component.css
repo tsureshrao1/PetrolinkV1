@@ -89,7 +89,7 @@
     border-radius: 5px 5px 0 0;
     overflow: hidden;
 }
- 
+ .carousel-control-prev, .carousel-control-next{top: -145px !important;}
 .carousel {
     position: unset !important;
 }
@@ -98,8 +98,10 @@
     background-color: #fff;
     border-radius: 0 0 5px 5px;
     margin-top: -15px;
-    padding: 15px;
+    padding: 35px;
 }
+   .carousel p{ font-size: 15px;}
+ .carousel h4 {font-size: 20px;}
  
 
 .carousel-control-prev-icon,
@@ -120,7 +122,7 @@
   content: '🡒';
   font-size: 30px;
   color: #9a9a9a;
-  top: -2px;
+  top: 0px;
   position: relative;
 }
 
@@ -128,7 +130,7 @@
   content: '🡐';
   font-size: 30px;
     color: #9a9a9a;
-    top: -2px;
+    top: 0px;
     position: relative;
 }
 
@@ -140,7 +142,7 @@
     border: 1px solid #2828281c;
     border-radius: 50%;
     text-align: center;
-    margin-top: -44px;
+    margin-top: -72px;
     background-color: #fff;
     margin-bottom: 8px;
     box-shadow: 0 3px 16px -6px #555;
