@@ -21,18 +21,7 @@
 .secTitle .info_txt_{
     color:#565455;
 }
-/*
-.secTitle h2:before {
-    content: "";
-    display: inline-block;
-    height: 3px;
-    width: 55px;
-    background-color: rgb(141, 198, 63);
-    position: relative;
-    top: 15px;
-    left: 47px;
-    margin-right: -60px
-} */
+ 
 .hgt250{
     min-height:250px;
 }
@@ -65,13 +54,9 @@
 }
  
 .slider_container {
-    background-color: #fff;
-    height: 100%;
+    background-color: #fff; 
     border-radius: 6px;
-    border: none;
-    background-color: #fff;
-    height: 100%;
-    border-radius: 6px;    
+    border: none;   
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
@@ -101,26 +86,26 @@
 }
 .carousel-item.active {
     border: none;
-    border-radius: 5px 0 0px 5px;
+    border-radius: 5px 5px 0 0;
     overflow: hidden;
 }
-
-.carousel-control-prev, .carousel-control-next {
-    width: 5%; 
-}
-
  
-.carousel-control-prev {
-    left: -31px;
+.carousel {
+    position: unset !important;
 }
-.carousel-control-next {
-    right: -31px;
+ 
+.carousel_txt {
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    margin-top: -15px;
+    padding: 15px;
 }
+ 
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-size: 100%, 100%;
     border-radius: 50%;
     background-color: #f2f2f2;
@@ -133,27 +118,37 @@
 .carousel-control-next-icon:after
 {
   content: '🡒';
-  font-size: 35px;
+  font-size: 30px;
   color: #9a9a9a;
-  top: 3px;
+  top: -2px;
   position: relative;
 }
 
 .carousel-control-prev-icon:after {
   content: '🡐';
-  font-size: 35px;
+  font-size: 30px;
     color: #9a9a9a;
-    top: 3px;
+    top: -2px;
     position: relative;
 }
 
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    left: 14px;
-    top: 0;
-}
+ .icon-construction { 
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    padding: 15px 0px;
+    border: 1px solid #2828281c;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -44px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    box-shadow: 0 3px 16px -6px #555;
+ }
+ .icon-construction svg{ 
+    width: 35px;
+    fill: #6d0a1e;
+ }
 
 .click-btn {
     position: absolute;

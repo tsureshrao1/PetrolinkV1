@@ -11,8 +11,8 @@ slide_togg = true;
   constructor() { }
 
   ngOnInit(): void {    
-    $('.carousel').carousel({
-      interval: 2500
+    $('#carousel3, #carousel3').carousel({
+      interval: 2750
     })
   }
 
