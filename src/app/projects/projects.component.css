@@ -103,7 +103,9 @@
    .carousel p{ font-size: 15px;}
  .carousel h4 {font-size: 20px;}
  
-
+.carousel-control-prev-icon{
+      opacity:0;
+}
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     height: 40px;
@@ -114,8 +116,14 @@
     background-image: none;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    opacity:0;
 }
-
+.carousel-control-prev-icon:hover{
+      opacity:1;
+}
+.carousel-control-next-icon:hover {
+        opacity:1;
+}
 
 .carousel-control-next-icon:after
 {
