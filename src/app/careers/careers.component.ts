@@ -14,6 +14,7 @@ declare var $: any;
 export class CareersComponent implements OnInit {
   careers:[];
   config: any;
+  myForm;
   showHold_ = [];
   successMessage: boolean = false;
   lenghtArea='';
