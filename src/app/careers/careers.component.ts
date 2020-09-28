@@ -118,6 +118,7 @@ ModelNot(){
           this.applyJobDirectData.expSalary = "";
           this.applyJobDirectData.presentLocation = "";
           this.successMessage = true;
+         
         }
       });
     }

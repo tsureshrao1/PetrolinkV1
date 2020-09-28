@@ -6,9 +6,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiClientService {
+  //Test
  HOST_NAME = "http://139.59.85.190:8090/petrolinkboot/";
-  //HOST_NAME = "http://localhost:8090/petrolinkboot/";
-  constructor(private httpClient:HttpClient) {
+   //Live
+ // HOST_NAME = "http://148.72.211.27/petrolinkboot/";
+constructor(private httpClient:HttpClient) {
     
   }
 
