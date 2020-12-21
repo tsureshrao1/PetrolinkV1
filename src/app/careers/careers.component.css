@@ -10,15 +10,16 @@
     background: #8dc63f!important;
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
-    box-shadow: 0px 0px 3px #ffffff;
+     border-radius: 4px;
 }
 
 .page-number span{
     display: block;
     width: 28px;
     height: 28px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
+    line-height: 30px;
 }
 
 .pagination-previous,.pagination-next{
@@ -151,15 +152,15 @@ margin-top: 15px;
     height:70px; overflow: hidden;
 }
 .noPrograms{
-    color: #d5d5d5;
+    color: #353535;
     text-align: center;
-    font-size: 30px;
+    font-size: 23px;
 }
 .fnt14px{
     font-size:14px
 }
 .custom-file-label,.custom-file-label:focus,.pInputs input,.pInputs input:focus,.carrInputs input,.carrInputs input:focus{
-    font-size: 16px;
+    font-size: 14px;
     border: 0px;
     border-bottom: 1px solid #ccc;
     padding: 10px 10px 20px 0px;
@@ -232,7 +233,8 @@ margin-top: 15px;
 fieldset{
     border: 1px solid #ccc;
     padding: 10px;
-    margin-bottom: 20px;
+    border-radius: 4px;
+    margin-bottom: 15px;
 }
 ::placeholder {
   color: #b6b6b6;
@@ -328,3 +330,6 @@ fieldset .fa-calendar{
         padding: 20px 20px;
     }
   }
+  .text-danger {
+    font-size: 14px;
+}

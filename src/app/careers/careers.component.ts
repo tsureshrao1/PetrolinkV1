@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation, ElementRef } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';  
 import { Router } from '@angular/router';
 import { ApiClientService } from './../api-client.service';
@@ -12,9 +12,11 @@ declare var $: any;
   encapsulation : ViewEncapsulation.None 
 })
 export class CareersComponent implements OnInit {
+  @ViewChild('clickEvent') closeButton;
+  @ViewChild('clickEvent1') closeButton1;
+  @ViewChild('myInput') myInputVariable: ElementRef;
   careers:[];
   config: any;
-  myForm;
   showHold_ = [];
   successMessage: boolean = false;
   lenghtArea='';
@@ -22,6 +24,7 @@ export class CareersComponent implements OnInit {
   applyJobData: applyJob;
   applyJobDirectData: applyJob;
   public userFile:any = File;
+  
   constructor(private router: Router,private apiClientService: ApiClientService) {
     this.applyJobData = new applyJob();
     this.applyJobDirectData = new applyJob();
@@ -59,6 +62,20 @@ export class CareersComponent implements OnInit {
     $('.custom-file-label').html(file.name); 
   }
 ModelNot(){
+  this.applyJobData.name = "";
+          this.applyJobData.dateOfbirth = "";
+          this.applyJobData.nationality = "";
+          this.applyJobData.email = "";
+          this.applyJobData.phoneNumber = "";
+          this.applyJobData.mobileNumber = "";
+          this.applyJobData.describeCurrentJob = "";
+          this.applyJobData.expAbroad = "";
+          this.applyJobData.expOthers = "";
+          this.applyJobData.qualifications = "";
+          this.applyJobData.joiningPeriod = "";
+          this.applyJobData.currentSalary = "";
+          this.applyJobData.expSalary = "";
+          this.applyJobData.presentLocation = "";
   this.successMessage = false;
 }
   applyJob(careerId){
@@ -93,8 +110,37 @@ ModelNot(){
     }
   }
 
+  closePop() {
+   window.location.reload();
+  // this.closeButton.nativeElement.click();
+ 
+ }
+
+ closePop1() {
+   window.location.reload();
+  //  this.closeButton1.nativeElement.click();
+ }
+
+ ClickedOut(event) {
+  this.closeButton.nativeElement.click();
+ }
+
   applyJobDirect(){
     console.log();
+    this.applyJobDirectData.name = "";
+          this.applyJobDirectData.dateOfbirth = "";
+          this.applyJobDirectData.nationality = "";
+          this.applyJobDirectData.email = "";
+          this.applyJobDirectData.phoneNumber = "";
+          this.applyJobDirectData.mobileNumber = "";
+          this.applyJobDirectData.describeCurrentJob = "";
+          this.applyJobDirectData.expAbroad = "";
+          this.applyJobDirectData.expOthers = "";
+          this.applyJobDirectData.qualifications = "";
+          this.applyJobDirectData.joiningPeriod = "";
+          this.applyJobDirectData.currentSalary = "";
+          this.applyJobDirectData.expSalary = "";
+          this.applyJobDirectData.presentLocation = "";
     if(this.applyJobDirectData != null && this.applyJobDirectData.email != null){
       const profile = JSON.stringify(this.applyJobDirectData);
       const formData = new FormData();

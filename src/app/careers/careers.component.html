@@ -1,11 +1,12 @@
-<div class="careers-area ptb-100 pb-70 hth-100" id="careers" >
+<div class="careers-area ptb-100 pb-70 hth-100" id="careers">
    <div class="container" *ngIf="careers">
       <div class="row">
          <div class="col-md-12 wow fadeInDown">
             <div class="secTitle text-center">
                <span class="info_txt">We are Petrolink holding company</span>
                <h2 class="text-center mb-4">CAREERS</h2>
-               <span class="info_txt text_hide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+               <span class="info_txt text_hide">Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry.</span>
             </div>
          </div>
       </div>
@@ -14,19 +15,23 @@
             <h2 class="open_ wow fadeInLeft">Current Openings</h2>
          </div>
       </div>
+
+
+
       <div class="row">
          <div class="col-md-12 col-lg-8">
             <div class="row">
-               <div class="col-md-6 wow fadeInRight" *ngFor="let career of careers | paginate: config; let i = index" style="padding: 10px;">
-                  <div class="single-price text-center no" >
+               <div class="col-md-6 wow fadeInRight" *ngFor="let career of careers | paginate: config; let i = index"
+                  style="padding: 10px;">
+                  <div class="single-price text-center no">
                      <div class="price-title">
                         <h3>{{career.role}}</h3>
                      </div>
-                     <div class="price-list" >
-                        <div class="jbsumry"  >
+                     <div class="price-list">
+                        <div class="jbsumry">
                            <p class="description">Job Summary</p>
-                           <p class="details" style="padding-bottom: 10px !important;">{{career.jobSummary}}</p>                            
-                        </div> 
+                           <p class="details" style="padding-bottom: 10px !important;">{{career.jobSummary}}</p>
+                        </div>
                         <p class="details"><i></i>&nbsp; {{career.location}}</p>
                         <div class="clearfix locApply">
                            <div class="text-right">
@@ -37,17 +42,22 @@
                      </div>
                      <div class="details_apply_">
                         <h3>{{career.role}}</h3>
-                        <p class="details" style="padding-bottom: 10px !important;">{{career.jobSummary}}</p>  
+                        <p class="details" style="padding-bottom: 10px !important;">{{career.jobSummary}}</p>
                         <p class="details"><i></i>&nbsp; {{career.location}}</p>
-                        <a data-toggle="modal" (click)="ModelNot()" href="#Modal_{{career.id}}"  data-target="#Modal_{{career.id}}" class="button">Apply Now</a>
+                        <a data-toggle="modal" (click)="ModelNot()" href="#Modal_{{career.id}}"
+                           data-target="#Modal_{{career.id}}" class="button">Apply Now</a>
                      </div>
                   </div>
+                  <!--Current Openings apply popup start-->
                   <div class="modal fade" id="Modal_{{career.id}}" tabindex="-1" role="dialog" aria-hidden="true">
                      <div class="modal-dialog modal-xl" role="document">
                         <div class="modal-content">
                            <div class="modal-header">
                               <h5 class="modal-title">{{career.role}}</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <button type="button" class="close" data-dismiss="modal" #clickEvent>
+
+                              </button>
+                              <button type="button" class="close" aria-label="Close" (click)="closePop()">
                                  <span aria-hidden="true">&times;</span>
                               </button>
                            </div>
@@ -102,7 +112,7 @@
                                           <form autocomplete="off">
                                              <div class="m-0 pInputs">
                                                 <fieldset>
-                                                   <legend>Personal Information Manju</legend>
+                                                   <legend>Personal Information </legend>
                                                    <div class="row">
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4"
                                                          [class.has-error]="email.invalid && email.touched"
@@ -207,12 +217,13 @@
                                                       </div>
                                                       <div class="form-group col-xs-12 col-sm-12 col-md-8 col-lg-8">
                                                          <div class="custom-file">
-                                                            <input type="file" (change)="uploadFile($event)"
+                                                            <input #myInput type="file" (change)="uploadFile($event)"
                                                                class="custom-file-input" id="inputGroupFile01"
                                                                aria-describedby="inputGroupFileAddon01" required>
                                                             <label class="custom-file-label"
                                                                for="inputGroupFile01">Upload
-                                                               Resume</label>
+                                                               Resume</label> 
+                                                           
                                                          </div>
                                                       </div>
                                                    </div>
@@ -244,17 +255,25 @@
                         </div>
                      </div>
                   </div>
+                  <!--Current Openings apply popup end-->
+
+                  <!--Direct apply popup start-->
                   <div class="modal fade" id="Modal_direct" tabindex="-1" role="dialog" aria-hidden="true">
                      <div class="modal-dialog modal-xl" role="document">
                         <div class="modal-content">
                            <div class="modal-header">
                               <h5 class="modal-title">Apply Here</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                              <button type="button" class="close" data-dismiss="modal" #clickEvent1>
+
+                              </button>
+                              <button type="button" class="close" aria-label="Close" (click)="closePop1()">
                                  <span aria-hidden="true">&times;</span>
                               </button>
+
                            </div>
                            <div class="modal-body">
-                              <div class="accordion" id="accordionExample">                             
+                              <div class="accordion" id="accordionExample">
                                  <div class="card">
                                     <div class="card-header" id="headingThree">
                                        <h2 class="mb-0">
@@ -271,13 +290,13 @@
                                           <form autocomplete="off" novalidate>
                                              <div class="m-0 pInputs">
                                                 <fieldset>
-                                                   <legend>Personal Information</legend>
+                                                   <legend>Personal Information 2</legend>
                                                    <div class="row">
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4"
                                                          [class.has-error]="email.invalid && email.touched"
                                                          [class.has-success]="email.valid">
-                                                         <input [(ngModel)]="applyJobDirectData.email" required id="email"
-                                                            #email="ngModel" type="email" name="email"
+                                                         <input [(ngModel)]="applyJobDirectData.email" required
+                                                            id="email" #email="ngModel" type="email" name="email"
                                                             class="form-control" placeholder="* Enter email">
                                                          <div class="text-danger mgtopm8px"
                                                             *ngIf="email.invalid && email.touched">* Email is required
@@ -286,8 +305,8 @@
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4"
                                                          [class.has-error]="name.invalid && name.touched"
                                                          [class.has-success]="name.valid">
-                                                         <input [(ngModel)]="applyJobDirectData.name" type="text" id="name"
-                                                            #name="ngModel" name="name" class="form-control"
+                                                         <input [(ngModel)]="applyJobDirectData.name" type="text"
+                                                            id="name" #name="ngModel" name="name" class="form-control"
                                                             placeholder="* Enter Name" required autocomplete="nope">
                                                          <div class="text-danger mgtopm8px"
                                                             *ngIf="name.invalid && name.touched">* Name is required
@@ -336,14 +355,14 @@
                                                          <!-- <input [(ngModel)]="applyJobData.describeCurrentJob" maxlength="250" name="describeCurrentJob" type="text"  class="form-control" placeholder="Describe Current Job" required autocomplete="nope"> -->
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobDirectData.expAbroad" name="expAbroad"
-                                                            type="text" class="form-control"
+                                                         <input [(ngModel)]="applyJobDirectData.expAbroad"
+                                                            name="expAbroad" type="text" class="form-control"
                                                             placeholder="Abroad (Experience in Years)" required
                                                             autocomplete="nope">
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobDirectData.expOthers" name="expOthers"
-                                                            type="text" class="form-control"
+                                                         <input [(ngModel)]="applyJobDirectData.expOthers"
+                                                            name="expOthers" type="text" class="form-control"
                                                             placeholder="Others  (Experience in Years)" required
                                                             autocomplete="nope">
                                                       </div>
@@ -365,8 +384,8 @@
                                                             placeholder="Current Salary" required autocomplete="nope">
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
-                                                         <input [(ngModel)]="applyJobDirectData.expSalary" name="expSalary"
-                                                            type="text" class="form-control"
+                                                         <input [(ngModel)]="applyJobDirectData.expSalary"
+                                                            name="expSalary" type="text" class="form-control"
                                                             placeholder="Expected Salary" required autocomplete="nope">
                                                       </div>
                                                       <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
@@ -376,7 +395,7 @@
                                                       </div>
                                                       <div class="form-group col-xs-12 col-sm-12 col-md-8 col-lg-8">
                                                          <div class="custom-file">
-                                                            <input type="file" (change)="uploadFile($event)"
+                                                            <input #myInput_ type="file" (change)="uploadFile($event)"
                                                                class="custom-file-input" id="inputGroupFile01"
                                                                aria-describedby="inputGroupFileAddon01" required>
                                                             <label class="custom-file-label"
@@ -386,7 +405,8 @@
                                                       </div>
                                                    </div>
                                                 </fieldset>
-                                                <div class="form-group col-xs-10 col-sm-12 col-md-12 col-lg-12 text-center">
+                                                <div
+                                                   class="form-group col-xs-10 col-sm-12 col-md-12 col-lg-12 text-center">
                                                    <button (click)="applyJobDirect()" type="submit"
                                                       class="btnLink btn-link col-md-12">Apply</button>
                                                 </div>
@@ -412,6 +432,7 @@
                         </div>
                      </div>
                   </div>
+                  <!--Direct apply popup end-->
                </div>
             </div>
          </div>
@@ -445,32 +466,7 @@
          <div class="col-md-2"></div>
       </div>
    </div>
-   <div class="banner_board wow fadeInUp " *ngIf="careers">
-      <div class="row">
-         <div class="col-md-6 no-padding text-center">
-            <span class="crr_ _left">You can apply online for jobs, by emailing <a>info@petrolinkholding.com</a> </span>
-         </div>
-         <div class="col-md-6 no-padding">
-            <i class="email"></i>
-            <span class="crr_ ">
-               Direct Apply <span class="block">Could not find a suitable vacancy?</span>
-            </span>
-      
-            <div class="clearfix locApply float-right">
-               <a (click)="applyJobDirect()" data-toggle="modal" data-target="#Modal_direct" class="button">Apply Here</a>
-            </div>
-         </div>
-   </div>
 
-   
-
-     
-
-
-      <div > 
-      </div>
-
-   </div>
    <div class="container" *ngIf="!careers?.length">
       <div class="row">
          <div class="col-lg-12">
@@ -482,5 +478,33 @@
       <div class="row">
          <h3 class="col-md-12 noPrograms">Currently there are no open positions.</h3>
       </div>
+   </div>
+
+   <div class="banner_board wow fadeInUp">
+      <div class="row">
+         <div class="col-md-6 no-padding text-center">
+            <span class="crr_ _left">You can apply online for jobs, by emailing <a>info@petrolinkholding.com</a> </span>
+         </div>
+         <div class="col-md-6 no-padding">
+            <i class="email"></i>
+            <span class="crr_ ">
+               Direct Apply <span class="block">Could not find a suitable vacancy?</span>
+            </span>
+
+            <div class="clearfix locApply float-right">
+               <a (click)="applyJobDirect()" data-toggle="modal" data-target="#Modal_direct" class="button">Apply
+                  Here</a>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+
+      <div>
+      </div>
+
    </div>
 </div>
