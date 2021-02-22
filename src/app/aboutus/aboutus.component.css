@@ -1,24 +1,30 @@
-.ptb-100 {
-    padding: 60px 0;
+.about-area {
+    /* background: url(../../assets/img/about-bg.jpg) no-repeat left bottom;*/
 }
-.textIndent1{     color: #555555;font-size: 14px;  line-height: 21px;}
-.secTitle { margin-bottom: 20px;}
-.secTitle h2{
+.textIndent1 {
+    color: #555555;
+    font-size: 14px;
+    line-height: 21px;
+}
+.secTitle {
+    margin-bottom: 45px !important;
+}
+.secTitle h2 {
     padding-bottom: 10px;
     padding-top: 10px;
-    font-size: 34px;
+    font-size: 42px !important;
     font-weight: bold;
-    letter-spacing: -1px;
+    letter-spacing: 0.3px !important;
     margin: 0 !important;
 }
-.secTitle .info_txt{
-    font-size: 13px;
-    color: #7d7b7b;
+.secTitle .info_txt {
+    font-size: 13px !important;
+    color: #565455 !important;
 }
-.secTitle .info_txt_{
-    color:#555555;
+.secTitle .info_txt_ {
+    color: #555555;
 }
-
+/*
 .secTitle h2:before {
     content: "";
     display: inline-block;
@@ -29,14 +35,26 @@
     top: 15px;
     left: 45px;
     margin-right: -60px
-} 
- 
- 
+} */
+
+.secTitle h2::after {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 168px;
+    background: url(../../assets/img/text_line.svg) no-repeat;
+    left: 0;
+    top: 78px;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
 .img_bnr {
-    margin-top: 50px;
-    margin-left: 30px;    
+    margin-top: 10px;
+    margin-left: 30px;
     position: relative;
-    z-index: 889;    
+    z-index: 889;
 }
 
 .img_bnr span {
@@ -44,12 +62,13 @@
     display: block;
     max-width: 395px;
 }
-.img_bnr img{ 
-        max-width: 375px;
+.img_bnr img {
+    max-width: 375px;
     border: 1px solid #f7f0ea;
-    margin-top: -30px;
-    margin-bottom: 25px;
-    margin-left: -25px;
+    margin-top: -5%;
+    margin-bottom: 6%;
+    margin-left: -6%;
+    width: 100%;
 }
 
 .view_txt {
@@ -60,26 +79,25 @@
     border-radius: 4px;
 }
 
-.view_txt.mi_ { 
+.view_txt.mi_ {
     padding-bottom: 8px;
 }
 
 .view_txt h2 {
-   font-size: 24px;
-   display: inline-block;
-   margin-left: 7px;
-   position: relative;
-   top: -15px;
+    font-size: 24px;
+    display: inline-block;
+    margin-left: 7px;
+    position: relative;
+    top: -15px;
 }
 .view_txt h2::before {
-content: " ";
+    content: " ";
     height: 3px;
     width: 48px;
     background-color: #9bd55a;
     position: relative;
     display: block;
     bottom: -37px;
-   
 }
 
 .view_txt.mi_ h2::before {
@@ -89,10 +107,10 @@ content: " ";
 .htxt_value_ {
     box-shadow: 0 0 14px #28282840;
     display: block;
-    width: 100%;
-    height: 125px;
+    width: 114%;
+    min-height: 125px;
     position: relative;
-    left: -70px;
+    left: -13%;
     z-index: 999;
     background-color: #ffffff;
 }
@@ -102,46 +120,51 @@ content: " ";
     width: 33%;
     float: left;
     color: #555555;
-    padding: 15px 0  30px 0;
+    border-right: 1px solid #dedede;
+    padding: 15px 0 35px 0;
+}
+.htxt_value_ .htxt_:last-child {
     border-right: none;
-     
 }
 
 .htxt_ span {
     display: block;
     color: #81cc29;
     font-size: 36px;
-    font-weight: 500;
 }
-.icons_list li{   
-     display: inline-block;
-    margin: 5px 25px;
+.icons_list li {
+    display: inline-block;
+    margin: 5px 50px;
+    letter-spacing: 0.4px;
 }
-.icons_list li:first-child{ margin-left: 0; }
+.icons_list li:first-child {
+    margin-left: 0;
+}
 .icons_list li i {
     width: 60px;
     height: 60px;
-    background-color: #82ca28;
+    background-color: #81cc29;
     display: block;
     background-size: 35px;
     margin: 0 auto;
     border-radius: 35px;
+    margin-bottom: 10px;
 }
 .inte_ {
     background: url(../../assets/img/deal.svg) no-repeat;
-    background-position: 11px 10px;
+    background-position: 12px 13px;
 }
 .reli_ {
     background: url(../../assets/img/reliability.svg) no-repeat;
-    background-position: 11px 10px;
+    background-position: 15px 12px;
 }
 .Own_ {
     background: url(../../assets/img/key.svg) no-repeat;
-    background-position: 11px 10px;
+    background-position: 13px 13px;
 }
 .tea_ {
     background: url(../../assets/img/puzzle.svg) no-repeat;
-    background-position: 11px 10px;
+    background-position: 13px 13px;
 }
 .cre_ {
     background: url(../../assets/img/money.svg) no-repeat;
@@ -151,17 +174,84 @@ content: " ";
 .vision_ {
     background: url(../../assets/img/vision.svg) no-repeat;
     display: inline-block;
-    width: 45px;
-    height: 45px;
-    background-position: 5px 5px;
+    width: 60px;
+    height: 60px;
+    background-position: 9px 12px;
     background-size: 40px;
+    position: relative;
+    top: 25px;
+    left: 28px;
+}
+
+.vision_txt {
+    float: left;
+    width: 87%;
+    padding-left: 25px;
+}
+.vision_txt h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.vision_txt p {
+    color: #5d5c5c;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+}
+.mt-bg {
+    margin: 20px 0px 5px 25px;
+    width: 100%;
+    display: inline-block;
 }
 
 .mission_ {
     background: url(../../assets/img/mission.svg) no-repeat;
     display: inline-block;
-    width: 45px;
-    height: 45px;
-    background-position: 0px 3px;
-    background-size: 47px;
+    width: 60px;
+    height: 60px;
+    background-position: 2px 3px;
+    position: relative;
+    top: 25px;
+    left: 28px;
+}
+
+.values_ {
+    background: url(../../assets/img/Values.svg) no-repeat;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-position: 7px 6px;
+    background-size: 50px;
+    position: relative;
+    top: 25px;
+    left: 28px;
+}
+
+.icon_bg {
+    background: url(../../assets/img/icon_bg.png) no-repeat;
+    width: 120px;
+    height: 120px;
+    background-size: 100%;
+    float: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .img_bnr {
+        margin-bottom: 15px;
+    }
+    .mt-bg {
+        margin: 15px;
+    }
+    .vision_txt {
+        width: 100%;
+        padding-left: 15px;
+        text-align: justify;
+    }
+    .icons_list li {
+        margin: 15px 8px 0 0;
+    }
+    .secTitle h2 {
+        font-size: 34px !important;
+    }
 }

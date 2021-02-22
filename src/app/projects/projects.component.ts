@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-projects',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-
+slide_togg = true;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
+    $('#carousel3, #carousel3').carousel({
+      interval: 2750
+    })
   }
+
+  toggfunc() {
+    this.slide_togg = !this.slide_togg;
+  }
+
+
 
 }

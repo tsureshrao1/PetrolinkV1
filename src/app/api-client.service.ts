@@ -6,8 +6,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiClientService {
-  HOST_NAME = "http://167.99.153.42:8080/petrolinkboot/";
-  constructor(private httpClient:HttpClient) {
+  //Test
+ //HOST_NAME = "http://139.59.85.190:8090/petrolinkboot/";
+   //Live
+ HOST_NAME = "http://148.72.211.27/petrolinkboot/";
+constructor(private httpClient:HttpClient) {
     
   }
 
@@ -18,6 +21,10 @@ export class ApiClientService {
   applyJob(data:FormData):Observable<any>{
     return this.httpClient.post<any>(this.HOST_NAME+"petrolink/profile",data).pipe();
   }
+  applyJobDirect(data:FormData):Observable<any>{
+    return this.httpClient.post<any>(this.HOST_NAME+"petrolink/directProfile",data).pipe();
+  }
+
 
   login(data):Observable<any>{
     return this.httpClient.post<any>(this.HOST_NAME+"petrolink/admin/user",data).pipe();

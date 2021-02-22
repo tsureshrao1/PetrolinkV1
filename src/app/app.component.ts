@@ -1,12 +1,15 @@
-import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { Component, HostListener, Inject, OnInit, ViewEncapsulation } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';  
 import { DOCUMENT } from '@angular/common';
+import { NgwWowService } from 'ngx-wow';
+
 declare var $: any;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  encapsulation : ViewEncapsulation.None,
   animations:[ 
     trigger('fade',
     [ 
@@ -41,24 +44,12 @@ export class AppComponent implements OnInit{
     });
   }
 
-  constructor(@Inject(DOCUMENT) document){
-
+  constructor(@Inject(DOCUMENT) document, private wowService: NgwWowService){
+    this.wowService.init();
   }
 
-  scrollToTop(){
-    $("header").scrollIntoView({behavior:"smooth"});
-  }
-
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(e) {
-     /*if (window.pageYOffset > 50) {
-       let element = document.getElementById('header');
-       element.classList.add('sticky');
-     } else {
-      let element = document.getElementById('header');
-        element.classList.remove('sticky'); 
-     }*/
-  }
+   
+  
 
 
 }

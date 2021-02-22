@@ -5,19 +5,21 @@
     margin: 0px 4px;
 }
 
+
 .page-number.current{
     background: #8dc63f!important;
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
-    box-shadow: 0px 0px 3px #ffffff;
+     border-radius: 4px;
 }
 
 .page-number span{
     display: block;
     width: 28px;
     height: 28px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
+    line-height: 30px;
 }
 
 .pagination-previous,.pagination-next{
@@ -25,10 +27,8 @@
     font-weight: bold;
 }
 /***********/
-.ptb-100 {
-    padding: 60px 0;
-}
-.textIndent1{     color: #555555;font-size: 14px;  line-height: 21px;}
+ 
+.textIndent1{     color: #555555;font-size: 15px;  line-height: 21px;}
 .secTitle { margin-bottom: 20px;}
 .secTitle h2{
     padding-bottom: 10px;
@@ -40,13 +40,13 @@
     color: #000;
 }
 .secTitle .info_txt{
-    font-size: 13px;
-    color: #7d7b7b;
+    font-size: 11px;
+    color: #565455;
 }
 .secTitle .info_txt_{
     color:#565455;
 }
-
+/*
 .secTitle h2:before {
     content: "";
     display: inline-block;
@@ -57,11 +57,13 @@
     top: 15px;
     left: 40px;
     margin-right: -60px
-} 
+}*/ 
 .careers-area {
-    background:url(../../assets/img/bg-8.jpg)no-repeat;
+    background:url(../../assets/img/bg-8.jpg) no-repeat;
     background-position: right center;
     background-color: #f1f5f8;
+    padding-top: 100px !important;
+    background-size: cover;
 }
 
 .price-list .description {
@@ -73,6 +75,7 @@
     padding: 0px 20px;
     font-size: 14px;
     margin: 0px;
+    color: #6f6f6f;
 }
 
 p.details i {
@@ -82,23 +85,25 @@ p.details i {
     display: inline-block;
     background-size: 13px;
     position: relative;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
 }
 
 .locApply {
-padding: 0 15px; 
+padding: 0 35px; 
+margin-top: 15px;
 }
 
 .locApply .button{
-    color: #3f3f3f;
-    padding: 5px 10px;
+    color: #282828;
+    padding: 5px 15px;
     font-size: 14px;
-    border: 1px solid #c1c1c1;
-    font-weight: 600;
+    border: 1px solid #adadad;
+    font-weight: 400;
     display: inline-block;
     text-decoration: none !important;
     border-radius: 25px;
-    padding-top: 3px;
+    padding-top: 6px;
+    cursor: pointer;
 }
 .btnLink{
     background: #8dc63f;
@@ -111,29 +116,51 @@ padding: 0 15px;
     display: inline-block;
     text-decoration:none !important;
     width:100px;
+    border-radius: 25px;
 }
 .locApply .button:hover,.btnLink:hover{
     background: #fff;
-    color: #8dc63f;
-    transition: all 0.10s ease 0s;
+    color: #81cc29; 
+    box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+    transition: all 0.3s ease; 
+    border-radius: 25px;
 }
 
-.single-price:hover{
-    box-shadow: 1px 3px 15px rgb(10 16 20 / 0.12), 0 0 11px rgba(10, 16, 20, 0.12);
+.single-price:hover {
+    box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5);
+    transition: all 0.3s ease;    
+} 
+
+.details_apply_ {   
+    font-size: 12px;    
+    z-index: 999;
+    background-color: #fff;
+    border: 1px solid #81cc29;
+    text-align: left;
+    padding: 10px 18px;
+    border-radius: 4px;
+    border-left-width: 5px;  
+    display: none;
 }
+
+.single-price .jbsumry {
+    height: 0;  
+    overflow: hidden;
+ }
+ 
 .hgtFixed{
     height:70px; overflow: hidden;
 }
 .noPrograms{
-    color: #d5d5d5;
+    color: #353535;
     text-align: center;
-    font-size: 30px;
+    font-size: 23px;
 }
 .fnt14px{
     font-size:14px
 }
 .custom-file-label,.custom-file-label:focus,.pInputs input,.pInputs input:focus,.carrInputs input,.carrInputs input:focus{
-    font-size: 16px;
+    font-size: 14px;
     border: 0px;
     border-bottom: 1px solid #ccc;
     padding: 10px 10px 20px 0px;
@@ -171,7 +198,7 @@ padding: 0 15px;
     margin: auto;
     border-radius: 5px;
     height: 150px;
-    transform: translate(0%, 150%);
+    transform: translate(0%, 300%);
 }
 .mgtopm8px{margin-top:-8px;}
 .txtsuccess{
@@ -206,7 +233,8 @@ padding: 0 15px;
 fieldset{
     border: 1px solid #ccc;
     padding: 10px;
-    margin-bottom: 20px;
+    border-radius: 4px;
+    margin-bottom: 15px;
 }
 ::placeholder {
   color: #b6b6b6;
@@ -225,6 +253,8 @@ fieldset .fa-calendar{
     font-weight: normal;
     letter-spacing: -1px;
 }
+
+
 .banner_board {
     width: 80%;
     margin: 0 auto;
@@ -236,7 +266,7 @@ fieldset .fa-calendar{
     margin-bottom: -80px;
     position: relative;
     z-index: 98;
-    margin-top: 25px;
+    bottom: -50px;
 }
 
 .crr_ {
@@ -251,12 +281,12 @@ fieldset .fa-calendar{
 
 .crr_._left {    
     position: relative;
-    border-right: 1px solid #c5c5c5;
-    top: -15px;
+    border-right: 1px solid #e0e0e0;
+    top: 12px;
 }
 
 .email + .crr_  {    
-    font-size: 21px;
+    font-size: 18px;
     color: #000;
     padding-left: 20px;
 }
@@ -265,12 +295,41 @@ fieldset .fa-calendar{
     width: 47px;
     height: 35px;
     background: url(../../assets/img/mail.svg);
-    margin-left: 15px;
+    margin-left: -15px;
     position: relative;
     top: -3px;
 }
 .crr_ .block { 
-    font-size: 16px;
-    color: #212529;
+    font-size: 14px;
+    color: #212529ab;
 }
 
+@media only screen and (max-width: 768px) { 
+    .banner_board {
+        width: 90%;
+        padding: 10px !important;
+    } 
+    .crr_._left {
+         border-bottom: 1px solid #e0e0e0;
+         border-right: none;
+         text-align: center;
+         margin-bottom: 20px;
+   }
+   .careers-area {
+    background:none;
+    background-position: right center;
+    background-color: #f1f5f8;
+    padding-top: 100px !important;
+    background-size: cover;
+}
+
+}
+@media only screen and (max-width: 1024px) {
+    .banner_board {
+        width: 90%;
+        padding: 20px 20px;
+    }
+  }
+  .text-danger {
+    font-size: 14px;
+}

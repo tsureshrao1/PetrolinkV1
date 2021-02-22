@@ -1,15 +1,20 @@
- 
 .ptb-100 {
-    padding: 60px 0;
     background-color: #eff3f6;
     background-image: url(../../assets/img/bg-5.png);
     background-repeat: no-repeat;
-    background-position: right 0;
+    background-position: right bottom;
+    background-size: contain;
 }
- 
-.textIndent1{     color: #555555;font-size: 14px;  line-height: 21px;}
-.secTitle { margin-bottom: 20px;}
-.secTitle h2{
+
+.textIndent1 {
+    color: #555555;
+    font-size: 15px;
+    line-height: 21px;
+}
+.secTitle {
+    margin-bottom: 20px;
+}
+.secTitle h2 {
     padding-bottom: 10px;
     padding-top: 10px;
     font-size: 34px;
@@ -17,27 +22,37 @@
     letter-spacing: -1px;
     margin: 0 !important;
 }
-.secTitle .info_txt{
+.secTitle .info_txt {
     font-size: 11px;
     color: #999999;
 }
-.secTitle .info_txt_{
-    color:#555555;
+.secTitle .info_txt_ {
+    color: #555555;
 }
 
-.secTitle h2:before {
+.secTitle h2::after {
     content: "";
-    display: inline-block;
-    height: 3px;
-    width: 55px;
-    background-color: rgb(141, 198, 63);
+    display: none;
+}
+.htxt_border {
     position: relative;
-    top: 15px;
-    left: 142px;
-    margin-right: -60px
-} 
+    display: block;
+}
+.secTitle .htxt_border::after {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 168px;
+    background: url(../../assets/img/text_line.svg) no-repeat;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
 .icons_container span {
- display: inline-block;
+    display: inline-block;
 }
 .icons_container img {
     width: 90px;
@@ -46,6 +61,15 @@
 .icons_container img:first-child {
     margin-left: 0;
 }
+@media only screen and (max-width: 768px) {
+    .img_bnr_ img {
+        margin-bottom: 15px !important;
+    }
+    .sig_ {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+}
 .img_bnr_ {
     background: url(../../assets/img/ch_.svg) no-repeat;
     background-size: 75%;
@@ -53,22 +77,25 @@
     background-position: 20px 27px;
     height: 100%;
 }
-.img_bnr_ img {     
-margin-top: 65px;
-margin-left: 66px;
-margin-bottom: 70px;
+
+.img_bnr_ img {
+    margin-top: 65px;
+    margin-left: 13%;
+    margin-bottom: 70px;
 }
-.sig_ > span{
-    font-size: 20px;
+.sig_ {
+    width: 80%;
+    text-align: center;
+}
+.sig_ > span {
+    font-size: 18px;
     font-weight: 500;
     display: inline-block;
-    float: left;
 }
-.sig_  > span > span {
+.sig_ > span > span {
     font-size: 14px;
     font-weight: normal;
     display: block;
-   
 }
 .sig_ img {
     width: 195px;

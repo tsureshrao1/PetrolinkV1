@@ -22,7 +22,11 @@
     transition: all 0.5s ease-in-out;   
 }
 .menu-item , .navbar-light.sticky_nav .menu-item{ 
-    color: #282828 !important;
+    color: #565656 !important;
+    letter-spacing: .3px;
+}
+.navbar {  
+    padding: 0.2rem 1rem !important;
 }
 .navbar-brand img{
     height: 80px;
@@ -34,6 +38,7 @@
  
 .navbar-light .navbar-nav .nav-link {
     color: #fff  ;
+    letter-spacing: .3px;
 }
 
 

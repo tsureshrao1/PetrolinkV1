@@ -1,4 +1,4 @@
-<div class="header-container">
+<div id="banner" class="header-container">
     <div class="video-container">
       <video preload="true" id="video" autoplay muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true">
         <source src="./assets/petrolink.mp4" type="video/mp4">
@@ -11,8 +11,8 @@
      <!--<a class="viewMoreButton">View More</a> --> 
     </div>
     <div class="header-footer">
-      <a (click)="videoPlayClick()"><i class="fa fa-play"></i></a>
-      <a (click)="videoPauseClick()"><i class="fa fa-pause"></i></a>
+      <a (click)="videoPlayClick()" *ngIf="btnview"><i class="fa fa-play"></i></a>
+      <a (click)="videoPauseClick()" *ngIf="!btnview" ><i class="fa fa-pause"></i></a>
     </div>
 </div>
 
